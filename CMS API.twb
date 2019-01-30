@@ -1,0 +1,3631 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20183.18.1219.1533                               -->
+<workbook original-version='18.1' source-build='2018.3.2 (20183.18.1219.1533)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='readmissions' inline='true' name='federated.1ug2y720aetk7w1dtmw1q0uf0w9c' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='readmissions' name='textscan.1cdv0o30en87ja1blnnzc1svny95'>
+            <connection class='textscan' directory='C:/Users/taylorr/Desktop/Jupyter Notebooks' filename='readmissions.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1cdv0o30en87ja1blnnzc1svny95' name='readmissions.csv' table='[readmissions#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='date' name='end_date' ordinal='1' />
+            <column datatype='real' name='expected' ordinal='2' />
+            <column datatype='integer' name='footnote' ordinal='3' />
+            <column datatype='string' name='hospital_name' ordinal='4' />
+            <column datatype='string' name='measure_id' ordinal='5' />
+            <column datatype='integer' name='number_of_discharges' ordinal='6' />
+            <column datatype='integer' name='number_of_readmissions' ordinal='7' />
+            <column datatype='real' name='predicted' ordinal='8' />
+            <column datatype='integer' name='provider_id' ordinal='9' />
+            <column datatype='real' name='readm_ratio' ordinal='10' />
+            <column datatype='date' name='start_date' ordinal='11' />
+            <column datatype='string' name='state' ordinal='12' />
+            <column datatype='integer' name='Colorado' ordinal='13' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[readmissions.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[readmissions.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>end_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[end_date]</local-name>
+            <parent-name>[readmissions.csv]</parent-name>
+            <remote-alias>end_date</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>expected</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[expected]</local-name>
+            <parent-name>[readmissions.csv]</parent-name>
+            <remote-alias>expected</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>footnote</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[footnote]</local-name>
+            <parent-name>[readmissions.csv]</parent-name>
+            <remote-alias>footnote</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hospital_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[hospital_name]</local-name>
+            <parent-name>[readmissions.csv]</parent-name>
+            <remote-alias>hospital_name</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>measure_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[measure_id]</local-name>
+            <parent-name>[readmissions.csv]</parent-name>
+            <remote-alias>measure_id</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>number_of_discharges</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[number_of_discharges]</local-name>
+            <parent-name>[readmissions.csv]</parent-name>
+            <remote-alias>number_of_discharges</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>number_of_readmissions</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[number_of_readmissions]</local-name>
+            <parent-name>[readmissions.csv]</parent-name>
+            <remote-alias>number_of_readmissions</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>predicted</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[predicted]</local-name>
+            <parent-name>[readmissions.csv]</parent-name>
+            <remote-alias>predicted</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>provider_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[provider_id]</local-name>
+            <parent-name>[readmissions.csv]</parent-name>
+            <remote-alias>provider_id</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>readm_ratio</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[readm_ratio]</local-name>
+            <parent-name>[readmissions.csv]</parent-name>
+            <remote-alias>readm_ratio</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>start_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[start_date]</local-name>
+            <parent-name>[readmissions.csv]</parent-name>
+            <remote-alias>start_date</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[state]</local-name>
+            <parent-name>[readmissions.csv]</parent-name>
+            <remote-alias>state</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Colorado</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Colorado]</local-name>
+            <parent-name>[readmissions.csv]</parent-name>
+            <remote-alias>Colorado</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='End Date' datatype='date' name='[end_date]' role='dimension' type='ordinal' />
+      <column caption='Expected' datatype='real' name='[expected]' role='measure' type='quantitative' />
+      <column caption='Footnote' datatype='integer' name='[footnote]' role='measure' type='quantitative' />
+      <column caption='Hospital Name' datatype='string' name='[hospital_name]' role='dimension' type='nominal' />
+      <column caption='Measure Id' datatype='string' name='[measure_id]' role='dimension' type='nominal' />
+      <column caption='Number Of Discharges' datatype='integer' name='[number_of_discharges]' role='measure' type='quantitative' />
+      <column caption='Number Of Readmissions' datatype='integer' name='[number_of_readmissions]' role='measure' type='quantitative' />
+      <column caption='Predicted' datatype='real' name='[predicted]' role='measure' type='quantitative' />
+      <column caption='Provider Id' datatype='integer' name='[provider_id]' role='dimension' type='ordinal' />
+      <column caption='Readm Ratio' datatype='real' name='[readm_ratio]' role='measure' type='quantitative' />
+      <column caption='Start Date' datatype='date' name='[start_date]' role='dimension' type='ordinal' />
+      <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.431525' measure-ordering='alphabetic' measure-percentage='0.568475' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+    <datasource caption='value_of_care' inline='true' name='federated.10ok3zo1ixnt6m1geyqd20cvb5ge' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='value_of_care' name='textscan.0ye73x008jlc431esu6tn1mu536y'>
+            <connection class='textscan' directory='C:/Users/taylorr/Desktop/Jupyter Notebooks' filename='value_of_care.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0ye73x008jlc431esu6tn1mu536y' name='value_of_care.csv' table='[value_of_care#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name=':@computed_region_csmy_5jwy' ordinal='1' />
+            <column datatype='integer' name=':@computed_region_f3tr_pr43' ordinal='2' />
+            <column datatype='integer' name=':@computed_region_nwen_78xc' ordinal='3' />
+            <column datatype='string' name='address' ordinal='4' />
+            <column datatype='string' name='category' ordinal='5' />
+            <column datatype='string' name='city' ordinal='6' />
+            <column datatype='string' name='county_name' ordinal='7' />
+            <column datatype='string' name='denominator' ordinal='8' />
+            <column datatype='string' name='higher_estimate' ordinal='9' />
+            <column datatype='string' name='hospital_name' ordinal='10' />
+            <column datatype='string' name='location' ordinal='11' />
+            <column datatype='string' name='location_address' ordinal='12' />
+            <column datatype='string' name='location_city' ordinal='13' />
+            <column datatype='string' name='location_state' ordinal='14' />
+            <column datatype='string' name='lower_estimate' ordinal='15' />
+            <column datatype='datetime' name='measure_end_date' ordinal='16' />
+            <column datatype='string' name='measure_id' ordinal='17' />
+            <column datatype='string' name='measure_name' ordinal='18' />
+            <column datatype='datetime' name='measure_start_date' ordinal='19' />
+            <column datatype='string' name='payment' ordinal='20' />
+            <column datatype='string' name='payment_footnote' ordinal='21' />
+            <column datatype='integer' name='phone_number' ordinal='22' />
+            <column datatype='integer' name='provider_id' ordinal='23' />
+            <column datatype='string' name='state' ordinal='24' />
+            <column datatype='string' name='value_of_care_category' ordinal='25' />
+            <column datatype='string' name='value_of_care_display_id' ordinal='26' />
+            <column datatype='string' name='value_of_care_display_name' ordinal='27' />
+            <column datatype='string' name='value_of_care_footnote' ordinal='28' />
+            <column datatype='integer' name='zip_code' ordinal='29' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[value_of_care.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[value_of_care.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>:@computed_region_csmy_5jwy</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[:@computed_region_csmy_5jwy]</local-name>
+            <parent-name>[value_of_care.csv]</parent-name>
+            <remote-alias>:@computed_region_csmy_5jwy</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>:@computed_region_f3tr_pr43</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[:@computed_region_f3tr_pr43]</local-name>
+            <parent-name>[value_of_care.csv]</parent-name>
+            <remote-alias>:@computed_region_f3tr_pr43</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>:@computed_region_nwen_78xc</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[:@computed_region_nwen_78xc]</local-name>
+            <parent-name>[value_of_care.csv]</parent-name>
+            <remote-alias>:@computed_region_nwen_78xc</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>address</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[address]</local-name>
+            <parent-name>[value_of_care.csv]</parent-name>
+            <remote-alias>address</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[category]</local-name>
+            <parent-name>[value_of_care.csv]</parent-name>
+            <remote-alias>category</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>city</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[city]</local-name>
+            <parent-name>[value_of_care.csv]</parent-name>
+            <remote-alias>city</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>county_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[county_name]</local-name>
+            <parent-name>[value_of_care.csv]</parent-name>
+            <remote-alias>county_name</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>denominator</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[denominator]</local-name>
+            <parent-name>[value_of_care.csv]</parent-name>
+            <remote-alias>denominator</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>higher_estimate</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[higher_estimate]</local-name>
+            <parent-name>[value_of_care.csv]</parent-name>
+            <remote-alias>higher_estimate</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hospital_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[hospital_name]</local-name>
+            <parent-name>[value_of_care.csv]</parent-name>
+            <remote-alias>hospital_name</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>location</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[location]</local-name>
+            <parent-name>[value_of_care.csv]</parent-name>
+            <remote-alias>location</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>location_address</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[location_address]</local-name>
+            <parent-name>[value_of_care.csv]</parent-name>
+            <remote-alias>location_address</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>location_city</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[location_city]</local-name>
+            <parent-name>[value_of_care.csv]</parent-name>
+            <remote-alias>location_city</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>location_state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[location_state]</local-name>
+            <parent-name>[value_of_care.csv]</parent-name>
+            <remote-alias>location_state</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lower_estimate</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[lower_estimate]</local-name>
+            <parent-name>[value_of_care.csv]</parent-name>
+            <remote-alias>lower_estimate</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>measure_end_date</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[measure_end_date]</local-name>
+            <parent-name>[value_of_care.csv]</parent-name>
+            <remote-alias>measure_end_date</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>measure_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[measure_id]</local-name>
+            <parent-name>[value_of_care.csv]</parent-name>
+            <remote-alias>measure_id</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>measure_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[measure_name]</local-name>
+            <parent-name>[value_of_care.csv]</parent-name>
+            <remote-alias>measure_name</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>measure_start_date</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[measure_start_date]</local-name>
+            <parent-name>[value_of_care.csv]</parent-name>
+            <remote-alias>measure_start_date</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>payment</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[payment]</local-name>
+            <parent-name>[value_of_care.csv]</parent-name>
+            <remote-alias>payment</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>payment_footnote</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[payment_footnote]</local-name>
+            <parent-name>[value_of_care.csv]</parent-name>
+            <remote-alias>payment_footnote</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>phone_number</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[phone_number]</local-name>
+            <parent-name>[value_of_care.csv]</parent-name>
+            <remote-alias>phone_number</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>provider_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[provider_id]</local-name>
+            <parent-name>[value_of_care.csv]</parent-name>
+            <remote-alias>provider_id</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[state]</local-name>
+            <parent-name>[value_of_care.csv]</parent-name>
+            <remote-alias>state</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>value_of_care_category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[value_of_care_category]</local-name>
+            <parent-name>[value_of_care.csv]</parent-name>
+            <remote-alias>value_of_care_category</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>value_of_care_display_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[value_of_care_display_id]</local-name>
+            <parent-name>[value_of_care.csv]</parent-name>
+            <remote-alias>value_of_care_display_id</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>value_of_care_display_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[value_of_care_display_name]</local-name>
+            <parent-name>[value_of_care.csv]</parent-name>
+            <remote-alias>value_of_care_display_name</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>value_of_care_footnote</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[value_of_care_footnote]</local-name>
+            <parent-name>[value_of_care.csv]</parent-name>
+            <remote-alias>value_of_care_footnote</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>zip_code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[zip_code]</local-name>
+            <parent-name>[value_of_care.csv]</parent-name>
+            <remote-alias>zip_code</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption=':@Computed Region Csmy 5Jwy' datatype='integer' name='[:@computed_region_csmy_5jwy]' role='measure' type='quantitative' />
+      <column caption=':@Computed Region F3Tr Pr43' datatype='integer' name='[:@computed_region_f3tr_pr43]' role='measure' type='quantitative' />
+      <column caption=':@Computed Region Nwen 78Xc' datatype='integer' name='[:@computed_region_nwen_78xc]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Address' datatype='string' name='[address]' role='dimension' type='nominal' />
+      <column caption='Category' datatype='string' name='[category]' role='dimension' type='nominal' />
+      <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='County Name' datatype='string' name='[county_name]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column caption='Denominator' datatype='string' name='[denominator]' role='dimension' type='nominal' />
+      <column caption='Higher Estimate' datatype='string' name='[higher_estimate]' role='dimension' type='nominal' />
+      <column caption='Hospital Name' datatype='string' name='[hospital_name]' role='dimension' type='nominal' />
+      <column caption='Location' datatype='string' name='[location]' role='dimension' type='nominal' />
+      <column caption='Location Address' datatype='string' name='[location_address]' role='dimension' type='nominal' />
+      <column caption='Location City' datatype='string' name='[location_city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Location State' datatype='string' name='[location_state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Lower Estimate' datatype='string' name='[lower_estimate]' role='dimension' type='nominal' />
+      <column caption='Measure End Date' datatype='datetime' name='[measure_end_date]' role='dimension' type='ordinal' />
+      <column caption='Measure Id' datatype='string' name='[measure_id]' role='dimension' type='nominal' />
+      <column caption='Measure Name' datatype='string' name='[measure_name]' role='dimension' type='nominal' />
+      <column caption='Measure Start Date' datatype='datetime' name='[measure_start_date]' role='dimension' type='ordinal' />
+      <column caption='Payment' datatype='string' name='[payment]' role='dimension' type='nominal' />
+      <column caption='Payment Footnote' datatype='string' name='[payment_footnote]' role='dimension' type='nominal' />
+      <column caption='Phone Number' datatype='integer' name='[phone_number]' role='dimension' type='ordinal' />
+      <column caption='Provider Id' datatype='integer' name='[provider_id]' role='dimension' type='ordinal' />
+      <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Value Of Care Category' datatype='string' name='[value_of_care_category]' role='dimension' type='nominal' />
+      <column caption='Value Of Care Display Id' datatype='string' name='[value_of_care_display_id]' role='dimension' type='nominal' />
+      <column caption='Value Of Care Display Name' datatype='string' name='[value_of_care_display_name]' role='dimension' type='nominal' />
+      <column caption='Value Of Care Footnote' datatype='string' name='[value_of_care_footnote]' role='dimension' type='nominal' />
+      <column caption='Zip Code' datatype='integer' default-format='*00000' name='[zip_code]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column-instance column='[payment]' derivation='None' name='[none:payment:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.755814' measure-ordering='alphabetic' measure-percentage='0.244186' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:payment:nk]' palette='blue_10_0' type='palette'>
+            <map to='#2a5783'>
+              <bucket>&quot;$29,284&quot;</bucket>
+            </map>
+            <map to='#2a5783'>
+              <bucket>&quot;$29,678&quot;</bucket>
+            </map>
+            <map to='#2a5783'>
+              <bucket>&quot;$32,643&quot;</bucket>
+            </map>
+            <map to='#2a5783'>
+              <bucket>&quot;$42,546&quot;</bucket>
+            </map>
+            <map to='#2a5783'>
+              <bucket>&quot;Not Available&quot;</bucket>
+            </map>
+            <map to='#2b5884'>
+              <bucket>&quot;$27,367&quot;</bucket>
+            </map>
+            <map to='#2b5884'>
+              <bucket>&quot;$27,715&quot;</bucket>
+            </map>
+            <map to='#2b5884'>
+              <bucket>&quot;$28,066&quot;</bucket>
+            </map>
+            <map to='#2b5884'>
+              <bucket>&quot;$29,235&quot;</bucket>
+            </map>
+            <map to='#2b5885'>
+              <bucket>&quot;$27,224&quot;</bucket>
+            </map>
+            <map to='#2c5985'>
+              <bucket>&quot;$26,854&quot;</bucket>
+            </map>
+            <map to='#2c5985'>
+              <bucket>&quot;$26,885&quot;</bucket>
+            </map>
+            <map to='#2c5985'>
+              <bucket>&quot;$26,986&quot;</bucket>
+            </map>
+            <map to='#2c5985'>
+              <bucket>&quot;$27,082&quot;</bucket>
+            </map>
+            <map to='#2c5986'>
+              <bucket>&quot;$26,785&quot;</bucket>
+            </map>
+            <map to='#2d5a86'>
+              <bucket>&quot;$26,291&quot;</bucket>
+            </map>
+            <map to='#2d5a86'>
+              <bucket>&quot;$26,697&quot;</bucket>
+            </map>
+            <map to='#2d5a86'>
+              <bucket>&quot;$26,745&quot;</bucket>
+            </map>
+            <map to='#2d5a87'>
+              <bucket>&quot;$26,171&quot;</bucket>
+            </map>
+            <map to='#2d5a87'>
+              <bucket>&quot;$26,261&quot;</bucket>
+            </map>
+            <map to='#2e5b87'>
+              <bucket>&quot;$26,018&quot;</bucket>
+            </map>
+            <map to='#2e5b87'>
+              <bucket>&quot;$26,062&quot;</bucket>
+            </map>
+            <map to='#2e5b87'>
+              <bucket>&quot;$26,078&quot;</bucket>
+            </map>
+            <map to='#2e5b88'>
+              <bucket>&quot;$26,015&quot;</bucket>
+            </map>
+            <map to='#2f5c88'>
+              <bucket>&quot;$25,872&quot;</bucket>
+            </map>
+            <map to='#2f5c88'>
+              <bucket>&quot;$25,902&quot;</bucket>
+            </map>
+            <map to='#2f5c88'>
+              <bucket>&quot;$26,003&quot;</bucket>
+            </map>
+            <map to='#2f5c89'>
+              <bucket>&quot;$25,786&quot;</bucket>
+            </map>
+            <map to='#2f5c89'>
+              <bucket>&quot;$25,855&quot;</bucket>
+            </map>
+            <map to='#305d89'>
+              <bucket>&quot;$25,742&quot;</bucket>
+            </map>
+            <map to='#305d89'>
+              <bucket>&quot;$25,752&quot;</bucket>
+            </map>
+            <map to='#305d89'>
+              <bucket>&quot;$25,762&quot;</bucket>
+            </map>
+            <map to='#305d8a'>
+              <bucket>&quot;$25,711&quot;</bucket>
+            </map>
+            <map to='#305d8a'>
+              <bucket>&quot;$25,712&quot;</bucket>
+            </map>
+            <map to='#315e8a'>
+              <bucket>&quot;$25,494&quot;</bucket>
+            </map>
+            <map to='#315e8a'>
+              <bucket>&quot;$25,510&quot;</bucket>
+            </map>
+            <map to='#315e8b'>
+              <bucket>&quot;$25,436&quot;</bucket>
+            </map>
+            <map to='#315e8b'>
+              <bucket>&quot;$25,460&quot;</bucket>
+            </map>
+            <map to='#315e8b'>
+              <bucket>&quot;$25,474&quot;</bucket>
+            </map>
+            <map to='#325f8b'>
+              <bucket>&quot;$25,336&quot;</bucket>
+            </map>
+            <map to='#325f8b'>
+              <bucket>&quot;$25,349&quot;</bucket>
+            </map>
+            <map to='#325f8c'>
+              <bucket>&quot;$25,010&quot;</bucket>
+            </map>
+            <map to='#325f8c'>
+              <bucket>&quot;$25,106&quot;</bucket>
+            </map>
+            <map to='#325f8c'>
+              <bucket>&quot;$25,162&quot;</bucket>
+            </map>
+            <map to='#33608c'>
+              <bucket>&quot;$24,911&quot;</bucket>
+            </map>
+            <map to='#33608d'>
+              <bucket>&quot;$24,753&quot;</bucket>
+            </map>
+            <map to='#33608d'>
+              <bucket>&quot;$24,860&quot;</bucket>
+            </map>
+            <map to='#33608d'>
+              <bucket>&quot;$24,878&quot;</bucket>
+            </map>
+            <map to='#34618d'>
+              <bucket>&quot;$24,654&quot;</bucket>
+            </map>
+            <map to='#34618d'>
+              <bucket>&quot;$24,669&quot;</bucket>
+            </map>
+            <map to='#34618e'>
+              <bucket>&quot;$24,585&quot;</bucket>
+            </map>
+            <map to='#34618e'>
+              <bucket>&quot;$24,636&quot;</bucket>
+            </map>
+            <map to='#34618e'>
+              <bucket>&quot;$24,642&quot;</bucket>
+            </map>
+            <map to='#35628e'>
+              <bucket>&quot;$24,546&quot;</bucket>
+            </map>
+            <map to='#35628f'>
+              <bucket>&quot;$24,479&quot;</bucket>
+            </map>
+            <map to='#35628f'>
+              <bucket>&quot;$24,508&quot;</bucket>
+            </map>
+            <map to='#35628f'>
+              <bucket>&quot;$24,524&quot;</bucket>
+            </map>
+            <map to='#35628f'>
+              <bucket>&quot;$24,544&quot;</bucket>
+            </map>
+            <map to='#366390'>
+              <bucket>&quot;$24,256&quot;</bucket>
+            </map>
+            <map to='#366390'>
+              <bucket>&quot;$24,309&quot;</bucket>
+            </map>
+            <map to='#366390'>
+              <bucket>&quot;$24,353&quot;</bucket>
+            </map>
+            <map to='#366390'>
+              <bucket>&quot;$24,466&quot;</bucket>
+            </map>
+            <map to='#366390'>
+              <bucket>&quot;$24,468&quot;</bucket>
+            </map>
+            <map to='#376491'>
+              <bucket>&quot;$24,160&quot;</bucket>
+            </map>
+            <map to='#376491'>
+              <bucket>&quot;$24,184&quot;</bucket>
+            </map>
+            <map to='#376491'>
+              <bucket>&quot;$24,194&quot;</bucket>
+            </map>
+            <map to='#376491'>
+              <bucket>&quot;$24,198&quot;</bucket>
+            </map>
+            <map to='#376491'>
+              <bucket>&quot;$24,213&quot;</bucket>
+            </map>
+            <map to='#376592'>
+              <bucket>&quot;$24,159&quot;</bucket>
+            </map>
+            <map to='#386592'>
+              <bucket>&quot;$24,101&quot;</bucket>
+            </map>
+            <map to='#386592'>
+              <bucket>&quot;$24,124&quot;</bucket>
+            </map>
+            <map to='#386592'>
+              <bucket>&quot;$24,134&quot;</bucket>
+            </map>
+            <map to='#386593'>
+              <bucket>&quot;$24,088&quot;</bucket>
+            </map>
+            <map to='#386693'>
+              <bucket>&quot;$24,043&quot;</bucket>
+            </map>
+            <map to='#396693'>
+              <bucket>&quot;$23,979&quot;</bucket>
+            </map>
+            <map to='#396693'>
+              <bucket>&quot;$24,018&quot;</bucket>
+            </map>
+            <map to='#396693'>
+              <bucket>&quot;$24,023&quot;</bucket>
+            </map>
+            <map to='#396694'>
+              <bucket>&quot;$23,958&quot;</bucket>
+            </map>
+            <map to='#396794'>
+              <bucket>&quot;$23,914&quot;</bucket>
+            </map>
+            <map to='#396794'>
+              <bucket>&quot;$23,937&quot;</bucket>
+            </map>
+            <map to='#3a6794'>
+              <bucket>&quot;$23,873&quot;</bucket>
+            </map>
+            <map to='#3a6794'>
+              <bucket>&quot;$23,888&quot;</bucket>
+            </map>
+            <map to='#3a6795'>
+              <bucket>&quot;$23,780&quot;</bucket>
+            </map>
+            <map to='#3a6795'>
+              <bucket>&quot;$23,849&quot;</bucket>
+            </map>
+            <map to='#3a6895'>
+              <bucket>&quot;$23,746&quot;</bucket>
+            </map>
+            <map to='#3a6895'>
+              <bucket>&quot;$23,762&quot;</bucket>
+            </map>
+            <map to='#3b6895'>
+              <bucket>&quot;$23,667&quot;</bucket>
+            </map>
+            <map to='#3b6896'>
+              <bucket>&quot;$23,606&quot;</bucket>
+            </map>
+            <map to='#3b6896'>
+              <bucket>&quot;$23,630&quot;</bucket>
+            </map>
+            <map to='#3b6996'>
+              <bucket>&quot;$23,574&quot;</bucket>
+            </map>
+            <map to='#3b6996'>
+              <bucket>&quot;$23,603&quot;</bucket>
+            </map>
+            <map to='#3c6996'>
+              <bucket>&quot;$23,573&quot;</bucket>
+            </map>
+            <map to='#3c6997'>
+              <bucket>&quot;$23,530&quot;</bucket>
+            </map>
+            <map to='#3c6997'>
+              <bucket>&quot;$23,532&quot;</bucket>
+            </map>
+            <map to='#3c6a97'>
+              <bucket>&quot;$23,446&quot;</bucket>
+            </map>
+            <map to='#3c6a97'>
+              <bucket>&quot;$23,459&quot;</bucket>
+            </map>
+            <map to='#3c6a98'>
+              <bucket>&quot;$23,437&quot;</bucket>
+            </map>
+            <map to='#3d6a98'>
+              <bucket>&quot;$23,434&quot;</bucket>
+            </map>
+            <map to='#3d6a98'>
+              <bucket>&quot;$23,435&quot;</bucket>
+            </map>
+            <map to='#3d6b98'>
+              <bucket>&quot;$23,394&quot;</bucket>
+            </map>
+            <map to='#3d6b98'>
+              <bucket>&quot;$23,424&quot;</bucket>
+            </map>
+            <map to='#3d6b99'>
+              <bucket>&quot;$23,358&quot;</bucket>
+            </map>
+            <map to='#3d6b99'>
+              <bucket>&quot;$23,378&quot;</bucket>
+            </map>
+            <map to='#3e6b99'>
+              <bucket>&quot;$23,348&quot;</bucket>
+            </map>
+            <map to='#3e6c99'>
+              <bucket>&quot;$23,311&quot;</bucket>
+            </map>
+            <map to='#3e6c99'>
+              <bucket>&quot;$23,337&quot;</bucket>
+            </map>
+            <map to='#3e6c9a'>
+              <bucket>&quot;$23,273&quot;</bucket>
+            </map>
+            <map to='#3e6c9a'>
+              <bucket>&quot;$23,294&quot;</bucket>
+            </map>
+            <map to='#3f6c9a'>
+              <bucket>&quot;$23,262&quot;</bucket>
+            </map>
+            <map to='#3f6c9a'>
+              <bucket>&quot;$23,263&quot;</bucket>
+            </map>
+            <map to='#3f6d9a'>
+              <bucket>&quot;$23,250&quot;</bucket>
+            </map>
+            <map to='#3f6d9b'>
+              <bucket>&quot;$23,089&quot;</bucket>
+            </map>
+            <map to='#3f6d9b'>
+              <bucket>&quot;$23,117&quot;</bucket>
+            </map>
+            <map to='#3f6d9b'>
+              <bucket>&quot;$23,144&quot;</bucket>
+            </map>
+            <map to='#406d9b'>
+              <bucket>&quot;$23,079&quot;</bucket>
+            </map>
+            <map to='#406e9b'>
+              <bucket>&quot;$23,051&quot;</bucket>
+            </map>
+            <map to='#406e9c'>
+              <bucket>&quot;$22,963&quot;</bucket>
+            </map>
+            <map to='#406e9c'>
+              <bucket>&quot;$22,978&quot;</bucket>
+            </map>
+            <map to='#406e9c'>
+              <bucket>&quot;$23,002&quot;</bucket>
+            </map>
+            <map to='#406e9c'>
+              <bucket>&quot;$23,003&quot;</bucket>
+            </map>
+            <map to='#416f9d'>
+              <bucket>&quot;$22,856&quot;</bucket>
+            </map>
+            <map to='#416f9d'>
+              <bucket>&quot;$22,862&quot;</bucket>
+            </map>
+            <map to='#416f9d'>
+              <bucket>&quot;$22,872&quot;</bucket>
+            </map>
+            <map to='#416f9d'>
+              <bucket>&quot;$22,883&quot;</bucket>
+            </map>
+            <map to='#416f9d'>
+              <bucket>&quot;$22,961&quot;</bucket>
+            </map>
+            <map to='#42709e'>
+              <bucket>&quot;$22,798&quot;</bucket>
+            </map>
+            <map to='#42709e'>
+              <bucket>&quot;$22,825&quot;</bucket>
+            </map>
+            <map to='#42709e'>
+              <bucket>&quot;$22,834&quot;</bucket>
+            </map>
+            <map to='#42709e'>
+              <bucket>&quot;$22,836&quot;</bucket>
+            </map>
+            <map to='#42709e'>
+              <bucket>&quot;$22,841&quot;</bucket>
+            </map>
+            <map to='#42719f'>
+              <bucket>&quot;$22,744&quot;</bucket>
+            </map>
+            <map to='#42719f'>
+              <bucket>&quot;$22,768&quot;</bucket>
+            </map>
+            <map to='#43719f'>
+              <bucket>&quot;$22,678&quot;</bucket>
+            </map>
+            <map to='#43719f'>
+              <bucket>&quot;$22,732&quot;</bucket>
+            </map>
+            <map to='#43719f'>
+              <bucket>&quot;$22,742&quot;</bucket>
+            </map>
+            <map to='#4372a0'>
+              <bucket>&quot;$22,524&quot;</bucket>
+            </map>
+            <map to='#4372a0'>
+              <bucket>&quot;$22,558&quot;</bucket>
+            </map>
+            <map to='#4372a0'>
+              <bucket>&quot;$22,606&quot;</bucket>
+            </map>
+            <map to='#4472a0'>
+              <bucket>&quot;$22,442&quot;</bucket>
+            </map>
+            <map to='#4472a0'>
+              <bucket>&quot;$22,507&quot;</bucket>
+            </map>
+            <map to='#4473a1'>
+              <bucket>&quot;$22,370&quot;</bucket>
+            </map>
+            <map to='#4473a1'>
+              <bucket>&quot;$22,404&quot;</bucket>
+            </map>
+            <map to='#4473a1'>
+              <bucket>&quot;$22,416&quot;</bucket>
+            </map>
+            <map to='#4473a1'>
+              <bucket>&quot;$22,426&quot;</bucket>
+            </map>
+            <map to='#4574a2'>
+              <bucket>&quot;$22,256&quot;</bucket>
+            </map>
+            <map to='#4574a2'>
+              <bucket>&quot;$22,290&quot;</bucket>
+            </map>
+            <map to='#4574a2'>
+              <bucket>&quot;$22,331&quot;</bucket>
+            </map>
+            <map to='#4574a2'>
+              <bucket>&quot;$22,337&quot;</bucket>
+            </map>
+            <map to='#4574a2'>
+              <bucket>&quot;$22,363&quot;</bucket>
+            </map>
+            <map to='#4575a3'>
+              <bucket>&quot;$22,252&quot;</bucket>
+            </map>
+            <map to='#4675a3'>
+              <bucket>&quot;$22,178&quot;</bucket>
+            </map>
+            <map to='#4675a3'>
+              <bucket>&quot;$22,189&quot;</bucket>
+            </map>
+            <map to='#4675a3'>
+              <bucket>&quot;$22,218&quot;</bucket>
+            </map>
+            <map to='#4675a3'>
+              <bucket>&quot;$22,226&quot;</bucket>
+            </map>
+            <map to='#4676a4'>
+              <bucket>&quot;$22,130&quot;</bucket>
+            </map>
+            <map to='#4676a4'>
+              <bucket>&quot;$22,167&quot;</bucket>
+            </map>
+            <map to='#4776a4'>
+              <bucket>&quot;$22,084&quot;</bucket>
+            </map>
+            <map to='#4776a4'>
+              <bucket>&quot;$22,092&quot;</bucket>
+            </map>
+            <map to='#4776a4'>
+              <bucket>&quot;$22,118&quot;</bucket>
+            </map>
+            <map to='#4777a5'>
+              <bucket>&quot;$22,009&quot;</bucket>
+            </map>
+            <map to='#4777a5'>
+              <bucket>&quot;$22,043&quot;</bucket>
+            </map>
+            <map to='#4777a5'>
+              <bucket>&quot;$22,048&quot;</bucket>
+            </map>
+            <map to='#4777a5'>
+              <bucket>&quot;$22,078&quot;</bucket>
+            </map>
+            <map to='#4877a5'>
+              <bucket>&quot;$21,996&quot;</bucket>
+            </map>
+            <map to='#4878a6'>
+              <bucket>&quot;$21,941&quot;</bucket>
+            </map>
+            <map to='#4878a6'>
+              <bucket>&quot;$21,948&quot;</bucket>
+            </map>
+            <map to='#4878a6'>
+              <bucket>&quot;$21,957&quot;</bucket>
+            </map>
+            <map to='#4878a6'>
+              <bucket>&quot;$21,985&quot;</bucket>
+            </map>
+            <map to='#4879a7'>
+              <bucket>&quot;$21,937&quot;</bucket>
+            </map>
+            <map to='#4979a7'>
+              <bucket>&quot;$21,875&quot;</bucket>
+            </map>
+            <map to='#4979a7'>
+              <bucket>&quot;$21,890&quot;</bucket>
+            </map>
+            <map to='#4979a7'>
+              <bucket>&quot;$21,905&quot;</bucket>
+            </map>
+            <map to='#4979a7'>
+              <bucket>&quot;$21,922&quot;</bucket>
+            </map>
+            <map to='#497aa8'>
+              <bucket>&quot;$21,806&quot;</bucket>
+            </map>
+            <map to='#497aa8'>
+              <bucket>&quot;$21,845&quot;</bucket>
+            </map>
+            <map to='#4a7aa8'>
+              <bucket>&quot;$21,799&quot;</bucket>
+            </map>
+            <map to='#4a7aa8'>
+              <bucket>&quot;$21,803&quot;</bucket>
+            </map>
+            <map to='#4a7aa8'>
+              <bucket>&quot;$21,805&quot;</bucket>
+            </map>
+            <map to='#4a7ba9'>
+              <bucket>&quot;$21,762&quot;</bucket>
+            </map>
+            <map to='#4a7ba9'>
+              <bucket>&quot;$21,772&quot;</bucket>
+            </map>
+            <map to='#4a7ba9'>
+              <bucket>&quot;$21,789&quot;</bucket>
+            </map>
+            <map to='#4b7ba9'>
+              <bucket>&quot;$21,662&quot;</bucket>
+            </map>
+            <map to='#4b7ba9'>
+              <bucket>&quot;$21,695&quot;</bucket>
+            </map>
+            <map to='#4b7caa'>
+              <bucket>&quot;$21,508&quot;</bucket>
+            </map>
+            <map to='#4b7caa'>
+              <bucket>&quot;$21,516&quot;</bucket>
+            </map>
+            <map to='#4b7caa'>
+              <bucket>&quot;$21,520&quot;</bucket>
+            </map>
+            <map to='#4b7caa'>
+              <bucket>&quot;$21,523&quot;</bucket>
+            </map>
+            <map to='#4b7caa'>
+              <bucket>&quot;$21,608&quot;</bucket>
+            </map>
+            <map to='#4c7dab'>
+              <bucket>&quot;$21,289&quot;</bucket>
+            </map>
+            <map to='#4c7dab'>
+              <bucket>&quot;$21,312&quot;</bucket>
+            </map>
+            <map to='#4c7dab'>
+              <bucket>&quot;$21,374&quot;</bucket>
+            </map>
+            <map to='#4c7dab'>
+              <bucket>&quot;$21,388&quot;</bucket>
+            </map>
+            <map to='#4d7eab'>
+              <bucket>&quot;$21,277&quot;</bucket>
+            </map>
+            <map to='#4d7eac'>
+              <bucket>&quot;$21,175&quot;</bucket>
+            </map>
+            <map to='#4d7eac'>
+              <bucket>&quot;$21,226&quot;</bucket>
+            </map>
+            <map to='#4d7eac'>
+              <bucket>&quot;$21,251&quot;</bucket>
+            </map>
+            <map to='#4d7eac'>
+              <bucket>&quot;$21,252&quot;</bucket>
+            </map>
+            <map to='#4e7fac'>
+              <bucket>&quot;$21,129&quot;</bucket>
+            </map>
+            <map to='#4e7fac'>
+              <bucket>&quot;$21,133&quot;</bucket>
+            </map>
+            <map to='#4e7fad'>
+              <bucket>&quot;$21,050&quot;</bucket>
+            </map>
+            <map to='#4e7fad'>
+              <bucket>&quot;$21,057&quot;</bucket>
+            </map>
+            <map to='#4e7fad'>
+              <bucket>&quot;$21,099&quot;</bucket>
+            </map>
+            <map to='#4f80ad'>
+              <bucket>&quot;$20,952&quot;</bucket>
+            </map>
+            <map to='#4f80ad'>
+              <bucket>&quot;$20,962&quot;</bucket>
+            </map>
+            <map to='#4f80ad'>
+              <bucket>&quot;$20,986&quot;</bucket>
+            </map>
+            <map to='#4f80ae'>
+              <bucket>&quot;$20,786&quot;</bucket>
+            </map>
+            <map to='#4f80ae'>
+              <bucket>&quot;$20,827&quot;</bucket>
+            </map>
+            <map to='#5081ae'>
+              <bucket>&quot;$20,696&quot;</bucket>
+            </map>
+            <map to='#5081ae'>
+              <bucket>&quot;$20,719&quot;</bucket>
+            </map>
+            <map to='#5081ae'>
+              <bucket>&quot;$20,750&quot;</bucket>
+            </map>
+            <map to='#5081af'>
+              <bucket>&quot;$20,647&quot;</bucket>
+            </map>
+            <map to='#5081af'>
+              <bucket>&quot;$20,655&quot;</bucket>
+            </map>
+            <map to='#5182af'>
+              <bucket>&quot;$20,489&quot;</bucket>
+            </map>
+            <map to='#5182af'>
+              <bucket>&quot;$20,501&quot;</bucket>
+            </map>
+            <map to='#5182af'>
+              <bucket>&quot;$20,523&quot;</bucket>
+            </map>
+            <map to='#5182af'>
+              <bucket>&quot;$20,560&quot;</bucket>
+            </map>
+            <map to='#5283b0'>
+              <bucket>&quot;$20,313&quot;</bucket>
+            </map>
+            <map to='#5283b0'>
+              <bucket>&quot;$20,341&quot;</bucket>
+            </map>
+            <map to='#5283b0'>
+              <bucket>&quot;$20,344&quot;</bucket>
+            </map>
+            <map to='#5283b0'>
+              <bucket>&quot;$20,413&quot;</bucket>
+            </map>
+            <map to='#5283b0'>
+              <bucket>&quot;$20,444&quot;</bucket>
+            </map>
+            <map to='#5384b0'>
+              <bucket>&quot;$20,270&quot;</bucket>
+            </map>
+            <map to='#5384b1'>
+              <bucket>&quot;$20,169&quot;</bucket>
+            </map>
+            <map to='#5384b1'>
+              <bucket>&quot;$20,181&quot;</bucket>
+            </map>
+            <map to='#5384b1'>
+              <bucket>&quot;$20,193&quot;</bucket>
+            </map>
+            <map to='#5384b1'>
+              <bucket>&quot;$20,214&quot;</bucket>
+            </map>
+            <map to='#5485b1'>
+              <bucket>&quot;$20,143&quot;</bucket>
+            </map>
+            <map to='#5485b2'>
+              <bucket>&quot;$20,098&quot;</bucket>
+            </map>
+            <map to='#5485b2'>
+              <bucket>&quot;$20,107&quot;</bucket>
+            </map>
+            <map to='#5485b2'>
+              <bucket>&quot;$20,124&quot;</bucket>
+            </map>
+            <map to='#5485b2'>
+              <bucket>&quot;$20,140&quot;</bucket>
+            </map>
+            <map to='#5586b2'>
+              <bucket>&quot;$20,066&quot;</bucket>
+            </map>
+            <map to='#5586b2'>
+              <bucket>&quot;$20,074&quot;</bucket>
+            </map>
+            <map to='#5586b3'>
+              <bucket>&quot;$20,011&quot;</bucket>
+            </map>
+            <map to='#5586b3'>
+              <bucket>&quot;$20,029&quot;</bucket>
+            </map>
+            <map to='#5586b3'>
+              <bucket>&quot;$20,052&quot;</bucket>
+            </map>
+            <map to='#5687b3'>
+              <bucket>&quot;$19,930&quot;</bucket>
+            </map>
+            <map to='#5687b3'>
+              <bucket>&quot;$19,970&quot;</bucket>
+            </map>
+            <map to='#5687b3'>
+              <bucket>&quot;$20,008&quot;</bucket>
+            </map>
+            <map to='#5687b4'>
+              <bucket>&quot;$19,918&quot;</bucket>
+            </map>
+            <map to='#5788b4'>
+              <bucket>&quot;$19,733&quot;</bucket>
+            </map>
+            <map to='#5788b4'>
+              <bucket>&quot;$19,769&quot;</bucket>
+            </map>
+            <map to='#5788b4'>
+              <bucket>&quot;$19,787&quot;</bucket>
+            </map>
+            <map to='#5788b4'>
+              <bucket>&quot;$19,917&quot;</bucket>
+            </map>
+            <map to='#5788b5'>
+              <bucket>&quot;$19,721&quot;</bucket>
+            </map>
+            <map to='#5889b5'>
+              <bucket>&quot;$19,433&quot;</bucket>
+            </map>
+            <map to='#5889b5'>
+              <bucket>&quot;$19,641&quot;</bucket>
+            </map>
+            <map to='#5889b5'>
+              <bucket>&quot;$19,693&quot;</bucket>
+            </map>
+            <map to='#5889b5'>
+              <bucket>&quot;$19,698&quot;</bucket>
+            </map>
+            <map to='#5889b5'>
+              <bucket>&quot;$19,701&quot;</bucket>
+            </map>
+            <map to='#598ab6'>
+              <bucket>&quot;$19,326&quot;</bucket>
+            </map>
+            <map to='#598ab6'>
+              <bucket>&quot;$19,363&quot;</bucket>
+            </map>
+            <map to='#598ab6'>
+              <bucket>&quot;$19,372&quot;</bucket>
+            </map>
+            <map to='#598ab6'>
+              <bucket>&quot;$19,402&quot;</bucket>
+            </map>
+            <map to='#598ab6'>
+              <bucket>&quot;$19,416&quot;</bucket>
+            </map>
+            <map to='#5a8bb6'>
+              <bucket>&quot;$19,299&quot;</bucket>
+            </map>
+            <map to='#5a8bb7'>
+              <bucket>&quot;$19,228&quot;</bucket>
+            </map>
+            <map to='#5a8bb7'>
+              <bucket>&quot;$19,241&quot;</bucket>
+            </map>
+            <map to='#5a8bb7'>
+              <bucket>&quot;$19,260&quot;</bucket>
+            </map>
+            <map to='#5b8cb7'>
+              <bucket>&quot;$19,212&quot;</bucket>
+            </map>
+            <map to='#5b8cb7'>
+              <bucket>&quot;$19,218&quot;</bucket>
+            </map>
+            <map to='#5b8cb8'>
+              <bucket>&quot;$19,176&quot;</bucket>
+            </map>
+            <map to='#5b8cb8'>
+              <bucket>&quot;$19,181&quot;</bucket>
+            </map>
+            <map to='#5c8db8'>
+              <bucket>&quot;$19,097&quot;</bucket>
+            </map>
+            <map to='#5c8db8'>
+              <bucket>&quot;$19,108&quot;</bucket>
+            </map>
+            <map to='#5c8db8'>
+              <bucket>&quot;$19,111&quot;</bucket>
+            </map>
+            <map to='#5c8db8'>
+              <bucket>&quot;$19,114&quot;</bucket>
+            </map>
+            <map to='#5c8db9'>
+              <bucket>&quot;$19,067&quot;</bucket>
+            </map>
+            <map to='#5d8eb9'>
+              <bucket>&quot;$19,016&quot;</bucket>
+            </map>
+            <map to='#5d8eb9'>
+              <bucket>&quot;$19,020&quot;</bucket>
+            </map>
+            <map to='#5d8eb9'>
+              <bucket>&quot;$19,023&quot;</bucket>
+            </map>
+            <map to='#5d8eb9'>
+              <bucket>&quot;$19,064&quot;</bucket>
+            </map>
+            <map to='#5e8fb9'>
+              <bucket>&quot;$18,973&quot;</bucket>
+            </map>
+            <map to='#5e8fba'>
+              <bucket>&quot;$18,899&quot;</bucket>
+            </map>
+            <map to='#5e8fba'>
+              <bucket>&quot;$18,929&quot;</bucket>
+            </map>
+            <map to='#5e8fba'>
+              <bucket>&quot;$18,965&quot;</bucket>
+            </map>
+            <map to='#5e8fba'>
+              <bucket>&quot;$18,971&quot;</bucket>
+            </map>
+            <map to='#5f90ba'>
+              <bucket>&quot;$18,876&quot;</bucket>
+            </map>
+            <map to='#5f90bb'>
+              <bucket>&quot;$18,805&quot;</bucket>
+            </map>
+            <map to='#5f90bb'>
+              <bucket>&quot;$18,807&quot;</bucket>
+            </map>
+            <map to='#5f90bb'>
+              <bucket>&quot;$18,854&quot;</bucket>
+            </map>
+            <map to='#6091bb'>
+              <bucket>&quot;$18,710&quot;</bucket>
+            </map>
+            <map to='#6091bb'>
+              <bucket>&quot;$18,725&quot;</bucket>
+            </map>
+            <map to='#6091bb'>
+              <bucket>&quot;$18,736&quot;</bucket>
+            </map>
+            <map to='#6091bc'>
+              <bucket>&quot;$18,678&quot;</bucket>
+            </map>
+            <map to='#6091bc'>
+              <bucket>&quot;$18,679&quot;</bucket>
+            </map>
+            <map to='#6192bc'>
+              <bucket>&quot;$18,630&quot;</bucket>
+            </map>
+            <map to='#6192bc'>
+              <bucket>&quot;$18,638&quot;</bucket>
+            </map>
+            <map to='#6192bc'>
+              <bucket>&quot;$18,651&quot;</bucket>
+            </map>
+            <map to='#6192bc'>
+              <bucket>&quot;$18,669&quot;</bucket>
+            </map>
+            <map to='#6293bd'>
+              <bucket>&quot;$18,555&quot;</bucket>
+            </map>
+            <map to='#6293bd'>
+              <bucket>&quot;$18,559&quot;</bucket>
+            </map>
+            <map to='#6293bd'>
+              <bucket>&quot;$18,598&quot;</bucket>
+            </map>
+            <map to='#6293bd'>
+              <bucket>&quot;$18,608&quot;</bucket>
+            </map>
+            <map to='#6293bd'>
+              <bucket>&quot;$18,624&quot;</bucket>
+            </map>
+            <map to='#6394be'>
+              <bucket>&quot;$18,475&quot;</bucket>
+            </map>
+            <map to='#6394be'>
+              <bucket>&quot;$18,476&quot;</bucket>
+            </map>
+            <map to='#6394be'>
+              <bucket>&quot;$18,490&quot;</bucket>
+            </map>
+            <map to='#6394be'>
+              <bucket>&quot;$18,493&quot;</bucket>
+            </map>
+            <map to='#6495be'>
+              <bucket>&quot;$18,460&quot;</bucket>
+            </map>
+            <map to='#6495be'>
+              <bucket>&quot;$18,469&quot;</bucket>
+            </map>
+            <map to='#6495bf'>
+              <bucket>&quot;$18,417&quot;</bucket>
+            </map>
+            <map to='#6495bf'>
+              <bucket>&quot;$18,428&quot;</bucket>
+            </map>
+            <map to='#6495bf'>
+              <bucket>&quot;$18,436&quot;</bucket>
+            </map>
+            <map to='#6596bf'>
+              <bucket>&quot;$18,400&quot;</bucket>
+            </map>
+            <map to='#6596bf'>
+              <bucket>&quot;$18,404&quot;</bucket>
+            </map>
+            <map to='#6596bf'>
+              <bucket>&quot;$18,406&quot;</bucket>
+            </map>
+            <map to='#6596c0'>
+              <bucket>&quot;$18,378&quot;</bucket>
+            </map>
+            <map to='#6697c0'>
+              <bucket>&quot;$18,335&quot;</bucket>
+            </map>
+            <map to='#6697c0'>
+              <bucket>&quot;$18,339&quot;</bucket>
+            </map>
+            <map to='#6697c0'>
+              <bucket>&quot;$18,345&quot;</bucket>
+            </map>
+            <map to='#6697c0'>
+              <bucket>&quot;$18,374&quot;</bucket>
+            </map>
+            <map to='#6798c1'>
+              <bucket>&quot;$18,245&quot;</bucket>
+            </map>
+            <map to='#6798c1'>
+              <bucket>&quot;$18,261&quot;</bucket>
+            </map>
+            <map to='#6798c1'>
+              <bucket>&quot;$18,262&quot;</bucket>
+            </map>
+            <map to='#6798c1'>
+              <bucket>&quot;$18,278&quot;</bucket>
+            </map>
+            <map to='#6798c1'>
+              <bucket>&quot;$18,331&quot;</bucket>
+            </map>
+            <map to='#6899c1'>
+              <bucket>&quot;$18,244&quot;</bucket>
+            </map>
+            <map to='#6899c2'>
+              <bucket>&quot;$18,201&quot;</bucket>
+            </map>
+            <map to='#6899c2'>
+              <bucket>&quot;$18,216&quot;</bucket>
+            </map>
+            <map to='#6899c2'>
+              <bucket>&quot;$18,232&quot;</bucket>
+            </map>
+            <map to='#699ac2'>
+              <bucket>&quot;$18,171&quot;</bucket>
+            </map>
+            <map to='#699ac2'>
+              <bucket>&quot;$18,195&quot;</bucket>
+            </map>
+            <map to='#699ac2'>
+              <bucket>&quot;$18,200&quot;</bucket>
+            </map>
+            <map to='#699ac3'>
+              <bucket>&quot;$18,166&quot;</bucket>
+            </map>
+            <map to='#699ac3'>
+              <bucket>&quot;$18,170&quot;</bucket>
+            </map>
+            <map to='#6a9bc3'>
+              <bucket>&quot;$18,118&quot;</bucket>
+            </map>
+            <map to='#6a9bc3'>
+              <bucket>&quot;$18,122&quot;</bucket>
+            </map>
+            <map to='#6a9bc3'>
+              <bucket>&quot;$18,130&quot;</bucket>
+            </map>
+            <map to='#6a9bc3'>
+              <bucket>&quot;$18,147&quot;</bucket>
+            </map>
+            <map to='#6b9cc4'>
+              <bucket>&quot;$18,075&quot;</bucket>
+            </map>
+            <map to='#6b9cc4'>
+              <bucket>&quot;$18,088&quot;</bucket>
+            </map>
+            <map to='#6b9cc4'>
+              <bucket>&quot;$18,100&quot;</bucket>
+            </map>
+            <map to='#6b9cc4'>
+              <bucket>&quot;$18,116&quot;</bucket>
+            </map>
+            <map to='#6b9cc4'>
+              <bucket>&quot;$18,117&quot;</bucket>
+            </map>
+            <map to='#6c9dc5'>
+              <bucket>&quot;$17,998&quot;</bucket>
+            </map>
+            <map to='#6c9dc5'>
+              <bucket>&quot;$18,043&quot;</bucket>
+            </map>
+            <map to='#6c9dc5'>
+              <bucket>&quot;$18,060&quot;</bucket>
+            </map>
+            <map to='#6c9dc5'>
+              <bucket>&quot;$18,072&quot;</bucket>
+            </map>
+            <map to='#6d9ec5'>
+              <bucket>&quot;$17,942&quot;</bucket>
+            </map>
+            <map to='#6d9ec5'>
+              <bucket>&quot;$17,992&quot;</bucket>
+            </map>
+            <map to='#6d9ec6'>
+              <bucket>&quot;$17,922&quot;</bucket>
+            </map>
+            <map to='#6d9ec6'>
+              <bucket>&quot;$17,935&quot;</bucket>
+            </map>
+            <map to='#6d9ec6'>
+              <bucket>&quot;$17,939&quot;</bucket>
+            </map>
+            <map to='#6e9fc6'>
+              <bucket>&quot;$17,892&quot;</bucket>
+            </map>
+            <map to='#6e9fc6'>
+              <bucket>&quot;$17,894&quot;</bucket>
+            </map>
+            <map to='#6e9fc6'>
+              <bucket>&quot;$17,907&quot;</bucket>
+            </map>
+            <map to='#6e9fc7'>
+              <bucket>&quot;$17,888&quot;</bucket>
+            </map>
+            <map to='#6fa0c7'>
+              <bucket>&quot;$17,815&quot;</bucket>
+            </map>
+            <map to='#6fa0c7'>
+              <bucket>&quot;$17,849&quot;</bucket>
+            </map>
+            <map to='#6fa0c7'>
+              <bucket>&quot;$17,850&quot;</bucket>
+            </map>
+            <map to='#6fa0c7'>
+              <bucket>&quot;$17,873&quot;</bucket>
+            </map>
+            <map to='#6fa0c8'>
+              <bucket>&quot;$17,805&quot;</bucket>
+            </map>
+            <map to='#70a1c8'>
+              <bucket>&quot;$17,761&quot;</bucket>
+            </map>
+            <map to='#70a1c8'>
+              <bucket>&quot;$17,782&quot;</bucket>
+            </map>
+            <map to='#70a1c8'>
+              <bucket>&quot;$17,795&quot;</bucket>
+            </map>
+            <map to='#70a1c8'>
+              <bucket>&quot;$17,797&quot;</bucket>
+            </map>
+            <map to='#71a2c8'>
+              <bucket>&quot;$17,744&quot;</bucket>
+            </map>
+            <map to='#71a2c9'>
+              <bucket>&quot;$17,677&quot;</bucket>
+            </map>
+            <map to='#71a2c9'>
+              <bucket>&quot;$17,689&quot;</bucket>
+            </map>
+            <map to='#71a2c9'>
+              <bucket>&quot;$17,696&quot;</bucket>
+            </map>
+            <map to='#71a2c9'>
+              <bucket>&quot;$17,705&quot;</bucket>
+            </map>
+            <map to='#72a3c9'>
+              <bucket>&quot;$17,672&quot;</bucket>
+            </map>
+            <map to='#72a3c9'>
+              <bucket>&quot;$17,674&quot;</bucket>
+            </map>
+            <map to='#72a3ca'>
+              <bucket>&quot;$17,628&quot;</bucket>
+            </map>
+            <map to='#72a3ca'>
+              <bucket>&quot;$17,660&quot;</bucket>
+            </map>
+            <map to='#73a4ca'>
+              <bucket>&quot;$17,596&quot;</bucket>
+            </map>
+            <map to='#73a4ca'>
+              <bucket>&quot;$17,602&quot;</bucket>
+            </map>
+            <map to='#73a4ca'>
+              <bucket>&quot;$17,608&quot;</bucket>
+            </map>
+            <map to='#73a4cb'>
+              <bucket>&quot;$17,581&quot;</bucket>
+            </map>
+            <map to='#74a5cb'>
+              <bucket>&quot;$17,526&quot;</bucket>
+            </map>
+            <map to='#74a5cb'>
+              <bucket>&quot;$17,528&quot;</bucket>
+            </map>
+            <map to='#74a5cb'>
+              <bucket>&quot;$17,531&quot;</bucket>
+            </map>
+            <map to='#74a5cb'>
+              <bucket>&quot;$17,541&quot;</bucket>
+            </map>
+            <map to='#74a5cb'>
+              <bucket>&quot;$17,576&quot;</bucket>
+            </map>
+            <map to='#75a6cc'>
+              <bucket>&quot;$17,497&quot;</bucket>
+            </map>
+            <map to='#75a6cc'>
+              <bucket>&quot;$17,512&quot;</bucket>
+            </map>
+            <map to='#75a6cc'>
+              <bucket>&quot;$17,519&quot;</bucket>
+            </map>
+            <map to='#75a6cc'>
+              <bucket>&quot;$17,523&quot;</bucket>
+            </map>
+            <map to='#76a6cc'>
+              <bucket>&quot;$17,492&quot;</bucket>
+            </map>
+            <map to='#76a7cc'>
+              <bucket>&quot;$17,474&quot;</bucket>
+            </map>
+            <map to='#76a7cd'>
+              <bucket>&quot;$17,428&quot;</bucket>
+            </map>
+            <map to='#76a7cd'>
+              <bucket>&quot;$17,434&quot;</bucket>
+            </map>
+            <map to='#76a7cd'>
+              <bucket>&quot;$17,457&quot;</bucket>
+            </map>
+            <map to='#77a8cd'>
+              <bucket>&quot;$17,382&quot;</bucket>
+            </map>
+            <map to='#77a8cd'>
+              <bucket>&quot;$17,392&quot;</bucket>
+            </map>
+            <map to='#77a8ce'>
+              <bucket>&quot;$17,327&quot;</bucket>
+            </map>
+            <map to='#77a8ce'>
+              <bucket>&quot;$17,343&quot;</bucket>
+            </map>
+            <map to='#78a8ce'>
+              <bucket>&quot;$17,308&quot;</bucket>
+            </map>
+            <map to='#78a9ce'>
+              <bucket>&quot;$17,288&quot;</bucket>
+            </map>
+            <map to='#78a9ce'>
+              <bucket>&quot;$17,291&quot;</bucket>
+            </map>
+            <map to='#78a9ce'>
+              <bucket>&quot;$17,298&quot;</bucket>
+            </map>
+            <map to='#78a9cf'>
+              <bucket>&quot;$17,286&quot;</bucket>
+            </map>
+            <map to='#79a9cf'>
+              <bucket>&quot;$17,274&quot;</bucket>
+            </map>
+            <map to='#79aacf'>
+              <bucket>&quot;$17,224&quot;</bucket>
+            </map>
+            <map to='#79aacf'>
+              <bucket>&quot;$17,260&quot;</bucket>
+            </map>
+            <map to='#79aacf'>
+              <bucket>&quot;$17,268&quot;</bucket>
+            </map>
+            <map to='#7aaacf'>
+              <bucket>&quot;$17,221&quot;</bucket>
+            </map>
+            <map to='#7aaad0'>
+              <bucket>&quot;$17,220&quot;</bucket>
+            </map>
+            <map to='#7aabd0'>
+              <bucket>&quot;$17,185&quot;</bucket>
+            </map>
+            <map to='#7aabd0'>
+              <bucket>&quot;$17,193&quot;</bucket>
+            </map>
+            <map to='#7aabd0'>
+              <bucket>&quot;$17,209&quot;</bucket>
+            </map>
+            <map to='#7babd0'>
+              <bucket>&quot;$17,181&quot;</bucket>
+            </map>
+            <map to='#7babd1'>
+              <bucket>&quot;$17,170&quot;</bucket>
+            </map>
+            <map to='#7bacd1'>
+              <bucket>&quot;$17,114&quot;</bucket>
+            </map>
+            <map to='#7bacd1'>
+              <bucket>&quot;$17,128&quot;</bucket>
+            </map>
+            <map to='#7cacd1'>
+              <bucket>&quot;$17,098&quot;</bucket>
+            </map>
+            <map to='#7cacd1'>
+              <bucket>&quot;$17,099&quot;</bucket>
+            </map>
+            <map to='#7cadd1'>
+              <bucket>&quot;$17,083&quot;</bucket>
+            </map>
+            <map to='#7cadd2'>
+              <bucket>&quot;$17,067&quot;</bucket>
+            </map>
+            <map to='#7cadd2'>
+              <bucket>&quot;$17,079&quot;</bucket>
+            </map>
+            <map to='#7dadd2'>
+              <bucket>&quot;$17,025&quot;</bucket>
+            </map>
+            <map to='#7dadd2'>
+              <bucket>&quot;$17,046&quot;</bucket>
+            </map>
+            <map to='#7daed2'>
+              <bucket>&quot;$16,998&quot;</bucket>
+            </map>
+            <map to='#7daed2'>
+              <bucket>&quot;$17,005&quot;</bucket>
+            </map>
+            <map to='#7eaed3'>
+              <bucket>&quot;$16,975&quot;</bucket>
+            </map>
+            <map to='#7eaed3'>
+              <bucket>&quot;$16,987&quot;</bucket>
+            </map>
+            <map to='#7eaed3'>
+              <bucket>&quot;$16,996&quot;</bucket>
+            </map>
+            <map to='#7eafd3'>
+              <bucket>&quot;$16,974&quot;</bucket>
+            </map>
+            <map to='#7fafd3'>
+              <bucket>&quot;$16,967&quot;</bucket>
+            </map>
+            <map to='#7fafd4'>
+              <bucket>&quot;$16,954&quot;</bucket>
+            </map>
+            <map to='#7fafd4'>
+              <bucket>&quot;$16,957&quot;</bucket>
+            </map>
+            <map to='#7fafd4'>
+              <bucket>&quot;$16,961&quot;</bucket>
+            </map>
+            <map to='#7fb0d4'>
+              <bucket>&quot;$16,951&quot;</bucket>
+            </map>
+            <map to='#80b0d4'>
+              <bucket>&quot;$16,936&quot;</bucket>
+            </map>
+            <map to='#80b0d4'>
+              <bucket>&quot;$16,940&quot;</bucket>
+            </map>
+            <map to='#80b0d5'>
+              <bucket>&quot;$16,910&quot;</bucket>
+            </map>
+            <map to='#80b0d5'>
+              <bucket>&quot;$16,922&quot;</bucket>
+            </map>
+            <map to='#81b1d5'>
+              <bucket>&quot;$16,854&quot;</bucket>
+            </map>
+            <map to='#81b1d5'>
+              <bucket>&quot;$16,864&quot;</bucket>
+            </map>
+            <map to='#81b1d5'>
+              <bucket>&quot;$16,871&quot;</bucket>
+            </map>
+            <map to='#81b1d5'>
+              <bucket>&quot;$16,889&quot;</bucket>
+            </map>
+            <map to='#81b2d6'>
+              <bucket>&quot;$16,853&quot;</bucket>
+            </map>
+            <map to='#82b2d6'>
+              <bucket>&quot;$16,824&quot;</bucket>
+            </map>
+            <map to='#82b2d6'>
+              <bucket>&quot;$16,828&quot;</bucket>
+            </map>
+            <map to='#82b2d6'>
+              <bucket>&quot;$16,838&quot;</bucket>
+            </map>
+            <map to='#82b2d6'>
+              <bucket>&quot;$16,841&quot;</bucket>
+            </map>
+            <map to='#83b3d7'>
+              <bucket>&quot;$16,802&quot;</bucket>
+            </map>
+            <map to='#83b3d7'>
+              <bucket>&quot;$16,808&quot;</bucket>
+            </map>
+            <map to='#83b3d7'>
+              <bucket>&quot;$16,809&quot;</bucket>
+            </map>
+            <map to='#83b3d7'>
+              <bucket>&quot;$16,810&quot;</bucket>
+            </map>
+            <map to='#84b4d7'>
+              <bucket>&quot;$16,750&quot;</bucket>
+            </map>
+            <map to='#84b4d7'>
+              <bucket>&quot;$16,751&quot;</bucket>
+            </map>
+            <map to='#84b4d7'>
+              <bucket>&quot;$16,755&quot;</bucket>
+            </map>
+            <map to='#84b4d8'>
+              <bucket>&quot;$16,749&quot;</bucket>
+            </map>
+            <map to='#85b4d8'>
+              <bucket>&quot;$16,745&quot;</bucket>
+            </map>
+            <map to='#85b5d8'>
+              <bucket>&quot;$16,723&quot;</bucket>
+            </map>
+            <map to='#85b5d8'>
+              <bucket>&quot;$16,737&quot;</bucket>
+            </map>
+            <map to='#86b5d8'>
+              <bucket>&quot;$16,702&quot;</bucket>
+            </map>
+            <map to='#86b5d8'>
+              <bucket>&quot;$16,714&quot;</bucket>
+            </map>
+            <map to='#86b6d9'>
+              <bucket>&quot;$16,669&quot;</bucket>
+            </map>
+            <map to='#86b6d9'>
+              <bucket>&quot;$16,682&quot;</bucket>
+            </map>
+            <map to='#87b6d9'>
+              <bucket>&quot;$16,642&quot;</bucket>
+            </map>
+            <map to='#87b6d9'>
+              <bucket>&quot;$16,654&quot;</bucket>
+            </map>
+            <map to='#87b7d9'>
+              <bucket>&quot;$16,598&quot;</bucket>
+            </map>
+            <map to='#87b7d9'>
+              <bucket>&quot;$16,613&quot;</bucket>
+            </map>
+            <map to='#88b7da'>
+              <bucket>&quot;$16,567&quot;</bucket>
+            </map>
+            <map to='#88b7da'>
+              <bucket>&quot;$16,590&quot;</bucket>
+            </map>
+            <map to='#88b8da'>
+              <bucket>&quot;$16,564&quot;</bucket>
+            </map>
+            <map to='#89b8da'>
+              <bucket>&quot;$16,536&quot;</bucket>
+            </map>
+            <map to='#89b8da'>
+              <bucket>&quot;$16,538&quot;</bucket>
+            </map>
+            <map to='#89b8da'>
+              <bucket>&quot;$16,539&quot;</bucket>
+            </map>
+            <map to='#89b9db'>
+              <bucket>&quot;$16,531&quot;</bucket>
+            </map>
+            <map to='#8ab9db'>
+              <bucket>&quot;$16,491&quot;</bucket>
+            </map>
+            <map to='#8ab9db'>
+              <bucket>&quot;$16,512&quot;</bucket>
+            </map>
+            <map to='#8ab9db'>
+              <bucket>&quot;$16,524&quot;</bucket>
+            </map>
+            <map to='#8abadb'>
+              <bucket>&quot;$16,470&quot;</bucket>
+            </map>
+            <map to='#8bbadb'>
+              <bucket>&quot;$16,444&quot;</bucket>
+            </map>
+            <map to='#8bbadc'>
+              <bucket>&quot;$16,432&quot;</bucket>
+            </map>
+            <map to='#8bbadc'>
+              <bucket>&quot;$16,438&quot;</bucket>
+            </map>
+            <map to='#8cbadc'>
+              <bucket>&quot;$16,413&quot;</bucket>
+            </map>
+            <map to='#8cbbdc'>
+              <bucket>&quot;$16,350&quot;</bucket>
+            </map>
+            <map to='#8cbbdc'>
+              <bucket>&quot;$16,351&quot;</bucket>
+            </map>
+            <map to='#8cbbdc'>
+              <bucket>&quot;$16,396&quot;</bucket>
+            </map>
+            <map to='#8dbbdc'>
+              <bucket>&quot;$16,341&quot;</bucket>
+            </map>
+            <map to='#8dbcdd'>
+              <bucket>&quot;$16,321&quot;</bucket>
+            </map>
+            <map to='#8dbcdd'>
+              <bucket>&quot;$16,323&quot;</bucket>
+            </map>
+            <map to='#8dbcdd'>
+              <bucket>&quot;$16,334&quot;</bucket>
+            </map>
+            <map to='#8ebcdd'>
+              <bucket>&quot;$16,306&quot;</bucket>
+            </map>
+            <map to='#8ebddd'>
+              <bucket>&quot;$16,302&quot;</bucket>
+            </map>
+            <map to='#8ebddd'>
+              <bucket>&quot;$16,303&quot;</bucket>
+            </map>
+            <map to='#8fbdde'>
+              <bucket>&quot;$16,294&quot;</bucket>
+            </map>
+            <map to='#8fbdde'>
+              <bucket>&quot;$16,301&quot;</bucket>
+            </map>
+            <map to='#8fbede'>
+              <bucket>&quot;$16,279&quot;</bucket>
+            </map>
+            <map to='#8fbede'>
+              <bucket>&quot;$16,293&quot;</bucket>
+            </map>
+            <map to='#90bede'>
+              <bucket>&quot;$16,267&quot;</bucket>
+            </map>
+            <map to='#90bede'>
+              <bucket>&quot;$16,272&quot;</bucket>
+            </map>
+            <map to='#90bfdf'>
+              <bucket>&quot;$16,253&quot;</bucket>
+            </map>
+            <map to='#90bfdf'>
+              <bucket>&quot;$16,258&quot;</bucket>
+            </map>
+            <map to='#91bfdf'>
+              <bucket>&quot;$16,241&quot;</bucket>
+            </map>
+            <map to='#91bfdf'>
+              <bucket>&quot;$16,251&quot;</bucket>
+            </map>
+            <map to='#91c0df'>
+              <bucket>&quot;$16,235&quot;</bucket>
+            </map>
+            <map to='#92c0df'>
+              <bucket>&quot;$16,233&quot;</bucket>
+            </map>
+            <map to='#92c0e0'>
+              <bucket>&quot;$16,206&quot;</bucket>
+            </map>
+            <map to='#92c0e0'>
+              <bucket>&quot;$16,216&quot;</bucket>
+            </map>
+            <map to='#92c0e0'>
+              <bucket>&quot;$16,229&quot;</bucket>
+            </map>
+            <map to='#93c1e0'>
+              <bucket>&quot;$16,194&quot;</bucket>
+            </map>
+            <map to='#93c1e0'>
+              <bucket>&quot;$16,196&quot;</bucket>
+            </map>
+            <map to='#93c1e0'>
+              <bucket>&quot;$16,197&quot;</bucket>
+            </map>
+            <map to='#93c1e0'>
+              <bucket>&quot;$16,204&quot;</bucket>
+            </map>
+            <map to='#94c2e1'>
+              <bucket>&quot;$16,173&quot;</bucket>
+            </map>
+            <map to='#94c2e1'>
+              <bucket>&quot;$16,192&quot;</bucket>
+            </map>
+            <map to='#94c2e1'>
+              <bucket>&quot;$16,193&quot;</bucket>
+            </map>
+            <map to='#95c2e1'>
+              <bucket>&quot;$16,164&quot;</bucket>
+            </map>
+            <map to='#95c3e1'>
+              <bucket>&quot;$16,135&quot;</bucket>
+            </map>
+            <map to='#95c3e1'>
+              <bucket>&quot;$16,153&quot;</bucket>
+            </map>
+            <map to='#95c3e1'>
+              <bucket>&quot;$16,161&quot;</bucket>
+            </map>
+            <map to='#96c3e2'>
+              <bucket>&quot;$16,117&quot;</bucket>
+            </map>
+            <map to='#96c3e2'>
+              <bucket>&quot;$16,119&quot;</bucket>
+            </map>
+            <map to='#96c4e2'>
+              <bucket>&quot;$16,113&quot;</bucket>
+            </map>
+            <map to='#97c4e2'>
+              <bucket>&quot;$16,077&quot;</bucket>
+            </map>
+            <map to='#97c4e2'>
+              <bucket>&quot;$16,091&quot;</bucket>
+            </map>
+            <map to='#97c4e2'>
+              <bucket>&quot;$16,102&quot;</bucket>
+            </map>
+            <map to='#97c5e2'>
+              <bucket>&quot;$16,074&quot;</bucket>
+            </map>
+            <map to='#98c5e3'>
+              <bucket>&quot;$16,051&quot;</bucket>
+            </map>
+            <map to='#98c5e3'>
+              <bucket>&quot;$16,064&quot;</bucket>
+            </map>
+            <map to='#98c5e3'>
+              <bucket>&quot;$16,070&quot;</bucket>
+            </map>
+            <map to='#99c5e3'>
+              <bucket>&quot;$16,049&quot;</bucket>
+            </map>
+            <map to='#99c6e3'>
+              <bucket>&quot;$16,029&quot;</bucket>
+            </map>
+            <map to='#99c6e3'>
+              <bucket>&quot;$16,038&quot;</bucket>
+            </map>
+            <map to='#9ac6e4'>
+              <bucket>&quot;$15,995&quot;</bucket>
+            </map>
+            <map to='#9ac6e4'>
+              <bucket>&quot;$16,017&quot;</bucket>
+            </map>
+            <map to='#9ac7e4'>
+              <bucket>&quot;$15,951&quot;</bucket>
+            </map>
+            <map to='#9ac7e4'>
+              <bucket>&quot;$15,982&quot;</bucket>
+            </map>
+            <map to='#9bc7e4'>
+              <bucket>&quot;$15,945&quot;</bucket>
+            </map>
+            <map to='#9bc7e4'>
+              <bucket>&quot;$15,947&quot;</bucket>
+            </map>
+            <map to='#9bc8e4'>
+              <bucket>&quot;$15,944&quot;</bucket>
+            </map>
+            <map to='#9cc8e5'>
+              <bucket>&quot;$15,919&quot;</bucket>
+            </map>
+            <map to='#9cc8e5'>
+              <bucket>&quot;$15,924&quot;</bucket>
+            </map>
+            <map to='#9cc8e5'>
+              <bucket>&quot;$15,931&quot;</bucket>
+            </map>
+            <map to='#9cc8e5'>
+              <bucket>&quot;$15,942&quot;</bucket>
+            </map>
+            <map to='#9dc9e5'>
+              <bucket>&quot;$15,852&quot;</bucket>
+            </map>
+            <map to='#9dc9e5'>
+              <bucket>&quot;$15,878&quot;</bucket>
+            </map>
+            <map to='#9dc9e5'>
+              <bucket>&quot;$15,900&quot;</bucket>
+            </map>
+            <map to='#9ec9e6'>
+              <bucket>&quot;$15,838&quot;</bucket>
+            </map>
+            <map to='#9ecae6'>
+              <bucket>&quot;$15,789&quot;</bucket>
+            </map>
+            <map to='#9ecae6'>
+              <bucket>&quot;$15,820&quot;</bucket>
+            </map>
+            <map to='#9ecae6'>
+              <bucket>&quot;$15,828&quot;</bucket>
+            </map>
+            <map to='#9fcae6'>
+              <bucket>&quot;$15,764&quot;</bucket>
+            </map>
+            <map to='#9fcae6'>
+              <bucket>&quot;$15,788&quot;</bucket>
+            </map>
+            <map to='#9fcbe6'>
+              <bucket>&quot;$15,751&quot;</bucket>
+            </map>
+            <map to='#a0cbe7'>
+              <bucket>&quot;$15,693&quot;</bucket>
+            </map>
+            <map to='#a0cbe7'>
+              <bucket>&quot;$15,736&quot;</bucket>
+            </map>
+            <map to='#a0cbe7'>
+              <bucket>&quot;$15,742&quot;</bucket>
+            </map>
+            <map to='#a0cce7'>
+              <bucket>&quot;$15,671&quot;</bucket>
+            </map>
+            <map to='#a1cce7'>
+              <bucket>&quot;$15,653&quot;</bucket>
+            </map>
+            <map to='#a1cce7'>
+              <bucket>&quot;$15,661&quot;</bucket>
+            </map>
+            <map to='#a1cce7'>
+              <bucket>&quot;$15,667&quot;</bucket>
+            </map>
+            <map to='#a2cce8'>
+              <bucket>&quot;$15,641&quot;</bucket>
+            </map>
+            <map to='#a2cde8'>
+              <bucket>&quot;$15,596&quot;</bucket>
+            </map>
+            <map to='#a2cde8'>
+              <bucket>&quot;$15,619&quot;</bucket>
+            </map>
+            <map to='#a2cde8'>
+              <bucket>&quot;$15,636&quot;</bucket>
+            </map>
+            <map to='#a3cde8'>
+              <bucket>&quot;$15,583&quot;</bucket>
+            </map>
+            <map to='#a3cee8'>
+              <bucket>&quot;$15,561&quot;</bucket>
+            </map>
+            <map to='#a3cee8'>
+              <bucket>&quot;$15,576&quot;</bucket>
+            </map>
+            <map to='#a4cee9'>
+              <bucket>&quot;$15,529&quot;</bucket>
+            </map>
+            <map to='#a4cee9'>
+              <bucket>&quot;$15,541&quot;</bucket>
+            </map>
+            <map to='#a4cee9'>
+              <bucket>&quot;$15,551&quot;</bucket>
+            </map>
+            <map to='#a4cfe9'>
+              <bucket>&quot;$15,517&quot;</bucket>
+            </map>
+            <map to='#a5cfe9'>
+              <bucket>&quot;$15,496&quot;</bucket>
+            </map>
+            <map to='#a5cfe9'>
+              <bucket>&quot;$15,510&quot;</bucket>
+            </map>
+            <map to='#a5cfe9'>
+              <bucket>&quot;$15,512&quot;</bucket>
+            </map>
+            <map to='#a6d0ea'>
+              <bucket>&quot;$15,483&quot;</bucket>
+            </map>
+            <map to='#a6d0ea'>
+              <bucket>&quot;$15,486&quot;</bucket>
+            </map>
+            <map to='#a6d0ea'>
+              <bucket>&quot;$15,491&quot;</bucket>
+            </map>
+            <map to='#a7d0ea'>
+              <bucket>&quot;$15,462&quot;</bucket>
+            </map>
+            <map to='#a7d0ea'>
+              <bucket>&quot;$15,465&quot;</bucket>
+            </map>
+            <map to='#a7d1ea'>
+              <bucket>&quot;$15,449&quot;</bucket>
+            </map>
+            <map to='#a7d1ea'>
+              <bucket>&quot;$15,459&quot;</bucket>
+            </map>
+            <map to='#a8d1ea'>
+              <bucket>&quot;$15,418&quot;</bucket>
+            </map>
+            <map to='#a8d1ea'>
+              <bucket>&quot;$15,419&quot;</bucket>
+            </map>
+            <map to='#a8d1eb'>
+              <bucket>&quot;$15,406&quot;</bucket>
+            </map>
+            <map to='#a9d2eb'>
+              <bucket>&quot;$15,355&quot;</bucket>
+            </map>
+            <map to='#a9d2eb'>
+              <bucket>&quot;$15,375&quot;</bucket>
+            </map>
+            <map to='#a9d2eb'>
+              <bucket>&quot;$15,396&quot;</bucket>
+            </map>
+            <map to='#aad2eb'>
+              <bucket>&quot;$15,346&quot;</bucket>
+            </map>
+            <map to='#aad3eb'>
+              <bucket>&quot;$15,317&quot;</bucket>
+            </map>
+            <map to='#aad3eb'>
+              <bucket>&quot;$15,335&quot;</bucket>
+            </map>
+            <map to='#aad3eb'>
+              <bucket>&quot;$15,336&quot;</bucket>
+            </map>
+            <map to='#abd3eb'>
+              <bucket>&quot;$15,291&quot;</bucket>
+            </map>
+            <map to='#abd3ec'>
+              <bucket>&quot;$15,286&quot;</bucket>
+            </map>
+            <map to='#abd4ec'>
+              <bucket>&quot;$15,281&quot;</bucket>
+            </map>
+            <map to='#acd4ec'>
+              <bucket>&quot;$15,141&quot;</bucket>
+            </map>
+            <map to='#acd4ec'>
+              <bucket>&quot;$15,173&quot;</bucket>
+            </map>
+            <map to='#acd4ec'>
+              <bucket>&quot;$15,230&quot;</bucket>
+            </map>
+            <map to='#add4ec'>
+              <bucket>&quot;$15,062&quot;</bucket>
+            </map>
+            <map to='#add5ec'>
+              <bucket>&quot;$15,030&quot;</bucket>
+            </map>
+            <map to='#add5ec'>
+              <bucket>&quot;$15,048&quot;</bucket>
+            </map>
+            <map to='#aed5ec'>
+              <bucket>&quot;$15,004&quot;</bucket>
+            </map>
+            <map to='#aed5ed'>
+              <bucket>&quot;$14,961&quot;</bucket>
+            </map>
+            <map to='#aed5ed'>
+              <bucket>&quot;$14,987&quot;</bucket>
+            </map>
+            <map to='#aed6ed'>
+              <bucket>&quot;$14,954&quot;</bucket>
+            </map>
+            <map to='#afd6ed'>
+              <bucket>&quot;$14,908&quot;</bucket>
+            </map>
+            <map to='#afd6ed'>
+              <bucket>&quot;$14,937&quot;</bucket>
+            </map>
+            <map to='#afd6ed'>
+              <bucket>&quot;$14,950&quot;</bucket>
+            </map>
+            <map to='#b0d6ed'>
+              <bucket>&quot;$14,894&quot;</bucket>
+            </map>
+            <map to='#b0d7ed'>
+              <bucket>&quot;$14,862&quot;</bucket>
+            </map>
+            <map to='#b0d7ed'>
+              <bucket>&quot;$14,863&quot;</bucket>
+            </map>
+            <map to='#b1d7ee'>
+              <bucket>&quot;$14,849&quot;</bucket>
+            </map>
+            <map to='#b1d7ee'>
+              <bucket>&quot;$14,852&quot;</bucket>
+            </map>
+            <map to='#b1d8ee'>
+              <bucket>&quot;$14,800&quot;</bucket>
+            </map>
+            <map to='#b1d8ee'>
+              <bucket>&quot;$14,803&quot;</bucket>
+            </map>
+            <map to='#b2d8ee'>
+              <bucket>&quot;$14,686&quot;</bucket>
+            </map>
+            <map to='#b2d8ee'>
+              <bucket>&quot;$14,735&quot;</bucket>
+            </map>
+            <map to='#b2d8ee'>
+              <bucket>&quot;$14,765&quot;</bucket>
+            </map>
+            <map to='#b3d9ee'>
+              <bucket>&quot;$14,489&quot;</bucket>
+            </map>
+            <map to='#b3d9ee'>
+              <bucket>&quot;$14,575&quot;</bucket>
+            </map>
+            <map to='#b3d9ef'>
+              <bucket>&quot;$14,444&quot;</bucket>
+            </map>
+            <map to='#b4d9ef'>
+              <bucket>&quot;$14,377&quot;</bucket>
+            </map>
+            <map to='#b4d9ef'>
+              <bucket>&quot;$14,393&quot;</bucket>
+            </map>
+            <map to='#b4daef'>
+              <bucket>&quot;$14,358&quot;</bucket>
+            </map>
+            <map to='#b5daef'>
+              <bucket>&quot;$14,133&quot;</bucket>
+            </map>
+            <map to='#b5daef'>
+              <bucket>&quot;$14,163&quot;</bucket>
+            </map>
+            <map to='#b5daef'>
+              <bucket>&quot;$14,165&quot;</bucket>
+            </map>
+            <map to='#b5daef'>
+              <bucket>&quot;$14,313&quot;</bucket>
+            </map>
+            <map to='#b6dbef'>
+              <bucket>&quot;$14,131&quot;</bucket>
+            </map>
+            <map to='#b6dbf0'>
+              <bucket>&quot;$14,025&quot;</bucket>
+            </map>
+            <map to='#b6dbf0'>
+              <bucket>&quot;$14,032&quot;</bucket>
+            </map>
+            <map to='#b7dbf0'>
+              <bucket>&quot;$13,947&quot;</bucket>
+            </map>
+            <map to='#b7dbf0'>
+              <bucket>&quot;$14,011&quot;</bucket>
+            </map>
+            <map to='#b7dcf0'>
+              <bucket>&quot;$13,812&quot;</bucket>
+            </map>
+            <map to='#b8dcf0'>
+              <bucket>&quot;$13,709&quot;</bucket>
+            </map>
+            <map to='#b8dcf0'>
+              <bucket>&quot;$13,767&quot;</bucket>
+            </map>
+            <map to='#b8dcf0'>
+              <bucket>&quot;$13,790&quot;</bucket>
+            </map>
+            <map to='#b9ddf1'>
+              <bucket>&quot;$13,564&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Readmissions'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='readmissions' name='federated.1ug2y720aetk7w1dtmw1q0uf0w9c' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ug2y720aetk7w1dtmw1q0uf0w9c'>
+            <column datatype='integer' name='[Colorado]' role='measure' type='quantitative' />
+            <column caption='Hospital Name' datatype='string' name='[hospital_name]' role='dimension' type='nominal' />
+            <column-instance column='[hospital_name]' derivation='None' name='[none:hospital_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column caption='Number Of Discharges' datatype='integer' name='[number_of_discharges]' role='measure' type='quantitative' />
+            <column caption='Number Of Readmissions' datatype='integer' name='[number_of_readmissions]' role='measure' type='quantitative' />
+            <column caption='Readm Ratio' datatype='real' name='[readm_ratio]' role='measure' type='quantitative' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Colorado]' derivation='Sum' name='[sum:Colorado:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[number_of_discharges]' derivation='Sum' name='[sum:number_of_discharges:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[number_of_readmissions]' derivation='Sum' name='[sum:number_of_readmissions:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[readm_ratio]' derivation='Sum' name='[sum:readm_ratio:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ug2y720aetk7w1dtmw1q0uf0w9c].[none:state:nk]'>
+            <groupfilter from='&quot;AK&quot;' function='range' level='[none:state:nk]' to='&quot;WY&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1ug2y720aetk7w1dtmw1q0uf0w9c].[none:state:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1ug2y720aetk7w1dtmw1q0uf0w9c].[sum:Colorado:qk]' palette='blue_teal_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1ug2y720aetk7w1dtmw1q0uf0w9c].[sum:Colorado:qk]' />
+              <size column='[federated.1ug2y720aetk7w1dtmw1q0uf0w9c].[sum:readm_ratio:qk]' />
+              <lod column='[federated.1ug2y720aetk7w1dtmw1q0uf0w9c].[none:hospital_name:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1ug2y720aetk7w1dtmw1q0uf0w9c].[sum:number_of_discharges:qk]</rows>
+        <cols>[federated.1ug2y720aetk7w1dtmw1q0uf0w9c].[sum:number_of_readmissions:qk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Value of Care'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='value_of_care' name='federated.10ok3zo1ixnt6m1geyqd20cvb5ge' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.10ok3zo1ixnt6m1geyqd20cvb5ge'>
+            <column caption='Hospital Name' datatype='string' name='[hospital_name]' role='dimension' type='nominal' />
+            <column-instance column='[hospital_name]' derivation='None' name='[none:hospital_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[payment]' derivation='None' name='[none:payment:nk]' pivot='key' type='nominal' />
+            <column-instance column='[value_of_care_category]' derivation='None' name='[none:value_of_care_category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[value_of_care_display_name]' derivation='None' name='[none:value_of_care_display_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[value_of_care_footnote]' derivation='None' name='[none:value_of_care_footnote:nk]' pivot='key' type='nominal' />
+            <column-instance column='[zip_code]' derivation='None' name='[none:zip_code:ok]' pivot='key' type='ordinal' />
+            <column caption='Payment' datatype='string' name='[payment]' role='dimension' type='nominal' />
+            <column caption='Value Of Care Category' datatype='string' name='[value_of_care_category]' role='dimension' type='nominal' />
+            <column caption='Value Of Care Display Name' datatype='string' name='[value_of_care_display_name]' role='dimension' type='nominal' />
+            <column caption='Value Of Care Footnote' datatype='string' name='[value_of_care_footnote]' role='dimension' type='nominal' />
+            <column caption='Zip Code' datatype='integer' default-format='*00000' name='[zip_code]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.10ok3zo1ixnt6m1geyqd20cvb5ge].[none:payment:nk]'>
+            <groupfilter function='level-members' level='[none:payment:nk]' />
+          </filter>
+          <slices>
+            <column>[federated.10ok3zo1ixnt6m1geyqd20cvb5ge].[none:payment:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.10ok3zo1ixnt6m1geyqd20cvb5ge].[Longitude (generated)]' field-type='quantitative' max='-4777458.0593418442' min='-15343017.477816453' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.10ok3zo1ixnt6m1geyqd20cvb5ge].[Latitude (generated)]' field-type='quantitative' max='7592407.1778693907' min='2181455.1084735398' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='tab_base' value='true' />
+            <format attr='enabled' id='um_lcover' value='true' />
+            <format attr='enabled' id='tab_coastline' value='false' />
+            <format attr='enabled' id='pp2_line' value='false' />
+            <format attr='enabled' id='light_adm0_bnd' value='false' />
+            <format attr='enabled' id='light_adm0_lbl' value='false' />
+            <format attr='enabled' id='um_adm0_bnd' value='true' />
+            <format attr='enabled' id='um_adm0_lbl' value='true' />
+            <format attr='enabled' id='light_pp2_statebounds' value='false' />
+            <format attr='enabled' id='light_pp2_statelabels' value='false' />
+            <format attr='enabled' id='pp2_adminlabels' value='false' />
+            <format attr='enabled' id='pp2_statebounds' value='true' />
+            <format attr='enabled' id='pp2_statelabels' value='true' />
+            <format attr='enabled' id='countybounds' value='false' />
+            <format attr='enabled' id='countylabels' value='false' />
+            <format attr='enabled' id='zipbounds' value='false' />
+            <format attr='enabled' id='ziplabels' value='false' />
+            <format attr='enabled' id='tab_areabounds' value='false' />
+            <format attr='enabled' id='tab_arealabels' value='false' />
+            <format attr='enabled' id='tab_msabounds' value='false' />
+            <format attr='enabled' id='tab_msalabels' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.10ok3zo1ixnt6m1geyqd20cvb5ge].[none:payment:nk]' />
+              <lod column='[federated.10ok3zo1ixnt6m1geyqd20cvb5ge].[none:zip_code:ok]' />
+              <lod column='[federated.10ok3zo1ixnt6m1geyqd20cvb5ge].[none:hospital_name:nk]' />
+              <lod column='[federated.10ok3zo1ixnt6m1geyqd20cvb5ge].[none:value_of_care_category:nk]' />
+              <lod column='[federated.10ok3zo1ixnt6m1geyqd20cvb5ge].[none:value_of_care_display_name:nk]' />
+              <lod column='[federated.10ok3zo1ixnt6m1geyqd20cvb5ge].[none:value_of_care_footnote:nk]' />
+              <lod column='[federated.10ok3zo1ixnt6m1geyqd20cvb5ge].[none:payment:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.10ok3zo1ixnt6m1geyqd20cvb5ge].[Latitude (generated)]</rows>
+        <cols>[federated.10ok3zo1ixnt6m1geyqd20cvb5ge].[Longitude (generated)]</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows source-height='51'>
+    <window class='worksheet' name='Readmissions'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1ug2y720aetk7w1dtmw1q0uf0w9c].[none:state:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.1ug2y720aetk7w1dtmw1q0uf0w9c].[sum:readm_ratio:qk]' type='size' />
+            <card pane-specification-id='0' param='[federated.1ug2y720aetk7w1dtmw1q0uf0w9c].[sum:Colorado:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1ug2y720aetk7w1dtmw1q0uf0w9c].[none:state:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{33BCD4B3-28F9-4A58-A303-2DBD9F9EF545}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Value of Care'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.10ok3zo1ixnt6m1geyqd20cvb5ge].[none:hospital_name:nk]</field>
+            <field>[federated.10ok3zo1ixnt6m1geyqd20cvb5ge].[none:payment:nk]</field>
+            <field>[federated.10ok3zo1ixnt6m1geyqd20cvb5ge].[none:value_of_care_category:nk]</field>
+            <field>[federated.10ok3zo1ixnt6m1geyqd20cvb5ge].[none:value_of_care_display_name:nk]</field>
+            <field>[federated.10ok3zo1ixnt6m1geyqd20cvb5ge].[none:value_of_care_footnote:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{C361A772-D3CA-4908-AD23-968AAADF5BE6}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Readmissions' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAgAElEQVR4nO292W9cWZrg9zt332JhBHdRa2Yps6urqrvt6q6asQfGPIwHMPzg5xkY8L/l
+      tzFgGH7ziw34adCwxxj3eKqra7qqsnLTkhIl7rHf/ZzjhxukpCQlBcUgGRLvL5FIJMn78bvB
+      +91zzrcKrbWmpuaGYsxL0Dzs6KIytNZzkXFRFkHGIugwDxmXrYM1LyWUUhjGxexJSolpmh98
+      /bEBXESPi+qwKDIWQYd5yLhsHWYzAFXyzR//gBUtEQ8Psb0GeZLhByaltvni8/sopS5srUqp
+      C10PF18F5qHDIshYBB3mIeOydZjJAAC8IEShWFrZgiJGOyYpBj76xLouaqllWWJZM6t0imMj
+      vIgeF9VhUWQsgg7zkHHZOswkWQiBMG2Wl9rs7h+yubHOOM5Y9gxynAspV1NzncxmAIbF3Xv3
+      AGi22gCEYQhAcDl61dRcCXPzAtXUfIzUBlBzo6kNoOZG88kYgNaaXh7zeHzIKE+vW52aj4RP
+      xgAUmn6WcD/qspeOrludmo+EGSPBirJUWKaB1BpDgEaAVgjDxBDisvV8LwYCIQTb8QDXuJjf
+      uOYVSVmwEw/QQMcNaTkeYgH+3vNipicli8f88Y9f4be6FEVJYGtKLZBFQdha5u7WOnD9uSN3
+      ow55WeDZzoXkXPd9zEvGRa+XWvEiHnCv0cUQgu1JH1MIItu9Uj0u87OcMQ5gEvguhRKEnoNh
+      CIwyg6gFqkRrPbeQ9UXeLlprLGFcSJeL6rAoMuahwyBLaDs+aI3SmhU3ZCcZEZj2lelx2Z/l
+      TAZgGIJoaZ215SbDuMS3NKXhItMRQbODYRgXTkEALixjHqkQi3Af85AxDx18y2EkcwzTRACx
+      LPAs+1xyF+E+3iVjJgOw3YCtW1XMt/v66hd6F1KsZrHxLZuRzPlhdIQpBIVS3G10rlutuVKf
+      FmveyWbYolASpTWOYX5SB2CoDaBmBmzjYluQReaTiQPU1HwItQHU3GhqA6i50dQGUHOjqQ2g
+      5kYzkxconQx59PgJlheRFSVNFwpsynRCo7POrfXly9azpuZSmMkALMui0V5B5hMmeYGImjhF
+      jLu0hioSpJRz6wpRluUHX3/8+y/aFeIiOiyKjEXQYR4yLluH2VaAOGYSj+m0GijTI3RNCn+F
+      ctKn0d2ou0IsoIxF0GEeMhaiK0S0tMyXS9U2Z/X1byx/WmHxmptHfQiuudHUBlBzo6kNoOZG
+      UxtAzY2mNoCaG01tADU3mtoAam40s3WFmAx5/GybzlKHSS7xRUEuXGQ8IFreYGWpedl61tRc
+      CmKWGWFKFrx88ZL+cIhp+4SBC3mMCLuQx2xsbs6tev8i012Ob+WiXQguOulmEWQsgg7zkHHZ
+      Osy0AoyODuhNUla6XXqDGKEKpBNRDvaIupt1KsQCylgEHeYhYyFSIVorG7RWNgBYW3/9O5sX
+      Uqym5rqpD8E1N5raAGpuNLUB1NxoagOoudHUBlBzo6kNoOZG89EYQCZLhnkyl17xNTXHzGQA
+      RZbw/fePKaVid3eP/sEu+0cDXj5/yijOLltHSiV5Nu6RypKdeHjpv6/m5jDzgAzfgd3dHY76
+      E1qRiy76CL9N72CP4NbmpXaFyJXEFILAsNnPx2+t8K+7QiyWDvOQsRBdIcZHu+z0EpYamsmw
+      j2830cKi6O3R6KxfeiqEqU1ayqdfJNxudLDektfxKaZCaK0ZFilKa1qOP/M8tkW7j0XVYaZk
+      uFmQUl5bLpBUCqkVlrj4pJpF+KO/LmN70sc2TCxhMCxS7jW6V67DdcqYlw6GaSCmgxRf56Of
+      DzDIEw7TCZZhgtbcClrXrdJcyWTJrbANQKEvPoftJjIsUvpxikBwO2pXz8qUhfYCaa0plXzn
+      nv4wnXC/0eVOtIQQ4pN7SASCpMzJZUlcXL7D4VOklyfca3RZcn36efLG9xZ6BTjMJoyLDKkU
+      D5rLZ+b5C6pxniYGpZIYfFojfG5HS+wkQ5TWJytBzfkITJsX8YBclmyGb+4QFtoAhnnK/UaX
+      7UmfXElc87S6m2GbH8Y9AFq2h/mpzbAyDLbqB/9CrHgRBQprepZ6nYU2gHW/yaPRAZ5p47xl
+      TpVrWjxoVm0b5+GKrfk08S3nzK8vtAEEtsNn9sp1q1HzCbPQh+CamstmphWgSGOePn/JcrdN
+      b5TS8k0KY9oVorNOsx6Y/dFTKkUqCwLLmTnY9ikwkwEYlk3gmmD5oCZMUokuBuC16R/uE3qX
+      mwoxK3UqxIddr7Tmh0kPAWjgXtSZiw7zkLEYqRCHu+z2E8LJE7QVgMwosSmvKBViVj7FVIir
+      uD4tC1JV0nZ8DtIJsSppOt5Hdx8fImO2rhBrW/zV2oV0qFlgXNNCIEhlSdv1mZQZTedmbGvr
+      Q3ANQoiTHCOtNV03vGaNro6Fc4NOkox/87//HRrN//Df/prId69bpRtBaDtVtJ2Lddb72Fi4
+      FeD/+u13/Ne//jP+m3/65/ztb769bnVuFIY4nS35qbNwK8Av/+wu//P/+R8A+Nf/8q+vWZua
+      T52FrAcoSgmAbZ1PXu0FWiwd5iFjIbxAV815H/yamg9l4c4ANTVXyUwrgFYl+wd9ltoRk7TE
+      MzWlcFD5BC9q4dRv7AujtSaVJY5pYor6vXRVzGQAeZYRjw7Z7w1xDI1lVkMztOliDWPubFWp
+      EBdFa42U8kLXX/RIc1EdPkSGQvNkdIRvWsRlwVbUxsa48Gdx1fdxGTIuW4fZDGAyZJBBw1XE
+      ucRAI5WgLBKshouYus8uOslDa33hCTHzkHHV99FLJyz7EW3Hp1CSl/GQW37zo7uPy5Bx2TrM
+      ZABBe4XPgxau46CUxjBAY6BViWk5JwYwDx/yRWTMY0TSPK4/rwzXshgXGUIEZNNt0Dz0uO6/
+      x7xkXKYOMxmAaVmEZ7qR6r3/PIgsl7jIeTQ8wDJMtsI26oLLfs1sLKQb9KYhhGAteHPS5qfV
+      22Jxqd0NNTeaMw1gPB7x+PET6vLym0VaFjwaHvB0dESpbsYW7EwD+P6P/8hv/r/fUbdhulns
+      JENuR0t0vZD9dHLd6lwJZ54BgtBheXmz3h/dMFzDYpAn5FLiW/Z1q3MlnPmM27bN0aBX+3hu
+      GGtBEwNBaDu0Hf+61bkSzjSA3d0jRHbE//v3f7hqfWquAK01e8mIR8MDvh8ecJTFQFUP0PFC
+      Wo5/Y+oCztwCdbtdjLDLTz67DUCeTHi8vYcnCg4nBS3PoNAmZZ7QWFrj7tb6WWJqFpRRkaG0
+      5v60DPLZpEdg2ng3ZNvzOmcagCU0Wa6IWpVv2vFDmqFHkZSgNKYbYBYJYmkFZIGUsm6LsmAy
+      3nZ9L4t5kQzZ8Jsn+TEty6OfxSwTziRjHnpc1fXvk3GmARwe7fL73+7yy1//FRaQTYYMhiNW
+      V7oYvqxWALNLGQ+JVuq2KIso46zrD9MxSsBWtMT2pI9r2zRsj0GaseyFp36+LEtM0+Qoixnm
+      Ka5psRE0z7U9+igLYlbW7+A3D08OwW7Y5MsvqtWg8/oPNqMLKVZztYyKjNvREsZ05sCj4QGW
+      MAgsh924coFaP2pC3M8TCiW52+gwLjK2JwO2ok+nW/WpQ3A8POLv/uPv+PLLLz+xTvs1oeXQ
+      S2MUGsswsITBF+01HrSWWfEbHJzh+x/lKcteiCEETccjVxfbjiwapwzAi1r8za9+xe3V7sLl
+      o2itKZRE1S3QP4hlL0KjeTbuYRsWzam35/gffUbsP7TdEy/RpMhPrRAfO6e2QIZhQpnw1bND
+      /vm9O9eh05kcu+5SWSC15k709mmRNWcjhGDFb3DccD6wHH4YHeFZNpksuR0tnbqm4wbsp2Me
+      DQ+wp5mqnxJnxwFe7vD9n74hv2pt3sO4zLkTdWg5PqMivW51Pno80+Jes0vXC7nX6GKf8XYX
+      QrDqN3jQXK7OD59YfODUCqBkiutFPHj48EoiwaMiZTceYRoGt/13T3gMLJtnk151KIs67/zZ
+      mvcjhMBEYJo3dyU9ZQBllnI4GuFF7SspFjhIxjxoLrObDElUSX88QqPZCt982wghWPebFEpi
+      GkZdOF4zF049Rc+/+prCdtn99nuuIh+w60U8Gh6QlAWjLKXpeCw5AfvJ6NTPCiFwTGvhHv5S
+      KfpZQlzm9Yyyj4xTneGS0YhEalqNEMM0EVSpEI+2d/HkhO2RYr1hkykDVWSESyvc2VxDKXXh
+      /JFxnjKSOQJo2B7hWwabvQut9YX0UEqdqwg7kQV7yZiG7ZLJEsMQLDsh5gUP6OfVY97XL4qM
+      y9bhDC9Qyb/7t/83neV1fv1f/A0WoLWif3jAcqeNS0wJGIZATV1ox8IvqmjkeLTMD2/NPY+u
+      EHC+iPZ+3OdBa/nk//eSEakqadoXz6a8aGT9otcviozL1OGUAcT9Hk4YMhyOTrzCjh/xN3/9
+      S4QQaA2vXrAaeNUN4ro7CFx1V4jXF8+Ta+b8WSRlzmE6oeX4NM45tGIeOuynYwolWfObH+x2
+      XuSuEKfuyHZdbMvB9dyTbx73/Kn++6oFihDGjUmbfRttx+dlPKRQknGRMSkygg/Yup1FWha8
+      jIes+g36ecIgT+Yid1aOshiBmN7j4Ep/91VxagWIlm/x679uEwRBnQrxHoQQLLkBoyLjZTzE
+      MUzuNjpoOZ8Y+iBPWPMbONMktBeTAa1rKVQRn2x9+Jlr2pM//Y7/5+/+gU8r6+NyENMcmTvR
+      EutBc64eqpbjs5uMyGXJy3hIy73ah3/JDdBoennMZvDuGM3Hypl/rSQZ8vTr57UBXDOeZbMe
+      NNlNRrQdn6Z9tYPrBLDqN9gK259s2slbKsKWiZ/8QD2d6/oJLIcgms+ZouY0p8x60j/g3//m
+      a5Ys6rYoNZ88p1aAsL3MP/unv+Tpy0HdN7Hmk+fMZ3x3Z48ofJVs9sq/Dm/EjadBgZvuCq35
+      eDnTADzPZZK/SoYu0phH27vc3+jw2z8+ZblpU2qDMs+JllZOukLMIw9mEWSc9/p+ntDLYkxh
+      nJQLXlgHYCceIrVizW9ifsBLZhE+y3nIuEwdzq4JXl3lxR8enVSE2V5Aw3d59vwFZZYgnCau
+      zHD9JVAlSqm5dYW4KBedEnNeHQol6Wcxd4I2mZI8Gx2x6TXff+F72I9HOLZNaNpsj3vcOqcb
+      ch6f5SLIuGwdThmAVopSSvwgPDkh58mYJEnZuv+QrbsSmceUhkeZDInayze6K0RaSALbxbIs
+      DG2i0yon6nUZWmtyJbGEMfMwatMwmI5txzTNc38ui9CZYh4yrrwrxGRwwN//5jc828/41T/7
+      FQBu0ODzzxuvLvGmDtLoZrTPexeh5bATD9FaMylzVryqU4bWmv10TCoLCqVwDYtclaz6DSL7
+      /Q7mjhfSKxJGRcaG//4VRWnNIE/wTBvPPN8Do6a11o5h3rjz3KlPKhsP6Kfwi599UTfHnQEh
+      BJ81l0nKouqtY5iUZckgT9Fa4xgWaZmy1WwjleKH8RFxmROXOS3Hp/2WNoTHQahZ2Z70CabG
+      uBE0sWZMZFFa8XR0dFLsvhW2b5QRnDKA7u2f8N//q59chy4fLUIIAtv50deq6Y/ThFn0tOdC
+      P09pTaO6T0aH3G106LgfngJ+TKHkSepCKgsic7bgWSpLXNNmI2jydHyE1BrrBhlA/ZK/JJq2
+      h4EgVxJbGDwf93k6rkahaqoH7yetVR4PD0llcaaM4wP9LIf6Vb/Bk9EhSVmcK2HOM21yVfLD
+      uIdlmB/kbfqY+WRjXaWS7CYjLGGw4jeuvJvBsEiJywKNPsnoNIXBQTpme9Lni/Yae8mIjaDF
+      KE/x/Dcb0/bzhEGZIhCElsOq3zjZmmitGZcZozwltF2atkdkuzOdLX6MIQR3ow6lVlg3ML39
+      k1wBtK4GT3fdEN9yeD7uXbkO/SzmdtSm4wa8jIeYUw/Qihex4kf8/ugFrmkRlznN6Rv7uPFX
+      UhYMipQHjWUeNJfJlSSTr1ITd5IhkyKn44ZksmQ7HlzI9SuEwL6BB2BYkBVg3oXkpVa4poVn
+      2XjYHKTjucqfhY4b8mh4yLjM2AiavIwH3JoeMDeCFpHtMspTtqI2rmmhteYgnRCXVQCy0K98
+      19U2ReJhI7UikyX3pq3NPcvmh9ERpVbYwqyL8s/JtRvAKE/ZT8eYwmDzHF6Pd2EJg1yVjIuM
+      XJZnNny6bBqOR6ZKulQDJ55N3lyFGrZH47X0ZoVmXGTca1QpKF8dvWQ/HeOZNoM84UGzqjuW
+      Sp2qObAMk1IpTCF4Nu5Rak3b8uhadfPi9zGTAeTJhGe7R3QbLs/2+jRdQYGNTMdE3Q1urXU/
+      WIH9dMy9Rpd+FjMsM7pzGNIghOBeo8tBMj4ZPH0ddNyQ7UmfQZ6wHrzbl//jzUdou9O3fcH9
+      ZvfkDGObVTyhUBLbMJFKEZc5G0GTXh7TsD2W3IDvhwd0qQ3gfZxqi/I2Xr58STPyGSUlRZ5A
+      HkPQgSJlc3Pzg9qilErx/fiAtu2TyII1L8K/QD3tPIrir7MVSFX3myIEOIbJ+lsCYKVWvExG
+      KC0RwmDda+AYJpkq2YmHhJZLIgtuX9Dwb0JblJkMIJsM+fbJcxphQKEErdBGGi7lpE/U3aTd
+      8JFSnisFQWnNk9HhySHxbqODg/HRpULMW4ZUqooYKP1BMlJZkJYloWlj16kQ75Uxk2Q3bPKz
+      P//p6W+sfPjW57iBVdPxGeQpljB/lGu9OGitKaeH0stwFeayZCcZYgnzpK64/MA+/FUqhH3h
+      sUI3hWtzg5qGQWsaDQ0sB3uBa07HZc7zcZ/nkz6jYv51csetTzzL4vCGDKheFK7VC9TxQjre
+      xdMALpt+FrMZtjCE4EU8oHnOBlXvQ4jqPCSVwliwvqefOtfuBv0Y6HqVNwdg7T2uWq2rnJ/z
+      9CjdDNrsJSNsw6TjBhdVt+YcXLsBFFLSzxOajofBSe7YQhFYDvcaHTS8s++P1pp+nnCYjHEs
+      m62wPVMKhmUYbIafZt+dReda11ulNc8mPTSa/3S4zePxIWm5aHNpKgxRzSR4X3JaL4u5F3Xw
+      TIvxO84LWmvUj2SdfG2umte8i2tdAbTWCASpLGi7Phtek71kzN1pNPQ4N6aXJ3imRdP2rjVf
+      JZPlyVboVlilMPwY2zDZT8ckqqT9lqzMQkq24z5aV2//W2GbUkm2J300VWanJz6tYXSLypWt
+      AFprduIh3w8PmEzfjKZh0HI8JkVOoRS9PCZ8La++1Ipn4x6h5ZCWBbtnDM24SvaSEbfCNlth
+      m91keOr7QghuhW0802YrXMJ5S2XWTjJk3W9yr9khsl2OsgmH2YRVv8HdqMP+NeQu3VRmToX4
+      YeeQyNYcjHMatqYQNmUyIequs7W+/F4Z5TSJ60Gjy6PRIZ9NU3c7XsiSGxCXOVIpGo530mk5
+      kyXLfkRku4SWw+PR4cXu9oJEtsve1AgbZ7QplErxbNKjnAYFnbcE5KRWVfYlAte0GOQJoeVy
+      mE2wDZNgDukgNbMxkwE4fkjoDSnKklbgooXAKWLcziq6SJBSztQVopAljwcHBLZzKlDjChMl
+      BEmRsR0P6TgBR9mEoLAJDJtclgjNOwM8x7//uAhdaYVnnu9hUkq99Xc0TAd72inZPyPY1MsT
+      ItMhchyexwMC4+yPt217PB0dElkuwyJlM2jhGCaGHSC1IrScd+px0fv4mGRctg4zp0J893Sb
+      tZVl4lwS2rrqChH3iTrrtKLZUiGOI6pvi6aWZcluNmbZi3BNi0yWfDvYI7RcDCHYDFvvzOw8
+      NsJeXs3rqrIkJbejpbeeHbTWHGYTJkXGit+4UDpGWha8iAe4hokhDDbO8OwcpzMbCFJZEtnO
+      mcOnFz2F4KpkXLYOMyfDvY9Zc4EyWbKbDHEMi7XXqpyOFR3LgkTmrPlN9pIRnmnTnrEt+DBP
+      2ItHDIqUny5t4Fs2O/HwpFoql5KdZIBtmKz5TQwhiMucoyxmzW/wbNzjdtA+yaHRWpOpEmvq
+      AXrfAfx45UmLnKZ7uthdTgvQPdOm1JLb4dsNc9EfnKuScdk6XLkb9GU8OHn4zpp40nZ9bMPk
+      6fgISxgzP/xqOkn+XqMapL096U/diurEF/8yHrDqNXAMi14WA2AgkEqRS1m14XlN5l4yZj8Z
+      83RczSZ+H0JUe/rQcs58sDNZ4ltVAbrSGrmguU83iSs3AEMIclnls78tqLTsRdxvdFn2Z89n
+      11pXb2mqssN+HvN03EMg8KfnAFMIMlWSq/Kk+Ns1LdquXw2BCF+1NRxkCXvJkBU/ojOdAnNe
+      juuSx0WG1rqq7JKSp+MjXNO6cQXoi8iVb4FKpThIx9WD96OeOBdZ7rTWvJgMkFqh0ISWy5Ib
+      YL7WiU1Of7dtmiw5AWK6Cj0ZHaK0JrJdVt2IVEmgavy7PenTtD3uNbozD4koyxLTNHkyPqLj
+      BhxlMet+E9+y0dM3/+t6vU3GIm8drkrGQqRDzxMhqr3wuMho2G6VBj0XuYKNoEkuq4fvrMOy
+      aRisBU0yWfJ80scyDPpZQteNaDoecZlzkE0QQnC/0UUIcRLRzWTBXpJiCMGyF81kDJks2U/G
+      xGVO2/HxLRshxI3qu7PoXPkW6CAZE9kuXS9kJz4dTHo+6fNoeMCzce+DCrxt4+yH/xilNc/G
+      Pdb8RuWGzFMyVXKUTWhMI80CwahIUVoxyKr2hL89eM6zSY/9dMwP46P36ybEyRav5fgnxe41
+      i8WVrwCmYZDJEqX1qWnqh9mEwKySyHpZzEE6YeUc54BZKJTEt2wc08IxLbpeSKkkpmmxkwyw
+      tKBAsRMPSaXENASB6eBZNrZhksnizBSIHyOAJdcnkyVSqw/q2VNz+Vz5CtB1w2nFUzV8+XVy
+      KfGmUdDjjmXzxjFMUlkwyBJ24xGh7XAn6lStBZ2AYZlVUx8bHaRWBJbDsEgBTVLm2IZVTUyc
+      YRvTdUPajs+K17jyAXc1s3GuFeBg9wVH45yGKyiEQxkPaHQ3WenM3g9fCEH3LUUwq37ED5MB
+      gWUTlzn3Gx9ecvmu33+v0aWXxXhWlWAXlzmh5dJyfA6nvXm2J33aToBn2hiOoJfHtJ2Au40O
+      L+MBR9mEzaB1ZhDr9d8V1m/+heZcXqBnT77jcJSzvNRE5zEi7EIes/GBXSF+jFIKYRjkssQx
+      Z+1v/AqtNUlZMJHVofM8/YD20jGpKmlbLg3H4/e9HQLTZiJzfNPmQWOZ53EfA8Hy1IB7ecLm
+      a6uYnlYz6BvQTeGqZFy2DudaAVzHxXUEQhVIJ6Ic7NPobrx3QEZSFqjpdmIW19+HdjMoZMl+
+      PmHJDXgWD/i8tXKqICWTJS/jQdV2JGidfH9zOtqoLEu0IWi5PqHloHMQCMqpW9Q1LYrp7BzH
+      tE7ca3GZnxzq17yI8ALtXY71WGT34VXJWCg36OrmbVbf+Mrme6+Jy5zdeDQ9QJaXWgMspwUl
+      R1nMpMw4SMe0HZ+dpOrNuRE0eTbuIbVilKc4psWy9+Yhu1CSYV4FvRJZEFouy9PA2mbQwjWt
+      k1aLr/fv309G3I6WUFqzGw8J51w3XHM5XLoXKJeSwLLxLZvJBV2Bx8l0pZJ4pv3GalI9+BP6
+      eTItYezSzxNSWbDqNUhkwWEak8mSzbBVuT/lm4dspTXbyZC1oMGkzNmYZmkKIfCtV4ltZw2u
+      iGyP3XiIQhNZ9b7/Y+HSvUAtxwMh6GXV+B41PXKoDyj/y5Xk2bjHURafKo7pZzG2YfLT9jql
+      VvSyGKkU/SxhWKSkssCcbm2+HexxkI6RWrEbD0/yfDQaoTWB5UzTKmbvMtdxAzpeOPX41Abw
+      sXDpBiCEYMULKZSkVIrtSZ+0LHgyOuTJ6JD4HDk24yJjyQ3YCFongaXjssnjgptclXTcgNvR
+      EhrNw9Yqe8mIQimejfs8H/e4FbbJVElcFrimzbNxD6WrprNLbsgP4x7RtDfn49EhLyb9E8N9
+      130GloNfF7N8VFxJHEBNc1+a02qvg3TMZtjiTrR0rvK/luPTz5KTlopQHWqfjXvkShKXBbmS
+      bAYtBnlCXBb8vvcCz7SnJYzVQ/x4WOX+TIqM74Z7pGXVThCgabvcb3TpeiEv4yG3wzbOtGqr
+      5tPjUs8AVeJX9WbteCFPx0cA5GWJjKuvn1Va+DYsw5i2J9EnDaRGZYbSmrQsGBcpt8IWu8mI
+      vWTEF+1VMin5drAHQGi5jIus6qxsmmyGLXbiIbmSZ/ZiMYUgkQWZLOtA1ifKpRnA8ZQWIaq+
+      Oqt+g6N0wla0xDCv9uRLbnCSqjwrx7k6x5RKMipScinZCJp8N9hnK1rifrPLN4M9QNDxQuIi
+      Z3fqDep4LqkseTw8xLfsqgRx6r2xMOiYIcMipVCK5+P+yUCLmk+PSzOAclqIcida4tHokFW/
+      gWkYJGVBJgsi2yU4p69caU0vi6f7/BDXtHBNG99yEBSYhoFjWqSyIBQObadKRe5n8TQfx8MU
+      AkMIMlliCoPudELji8mAXJVV7o7QxGXOg2aX7ckAx7yZ44NuAucygCwesXM0pukZFMJFJgOi
+      zjqN4PTb0RIGjmnyaHTAile5DTeCFl/3d9FUE1Rm7QJ37P7cnvRp2N5JxdftaIklxz/J71FK
+      8XlzeXoWKNkK2+ynYxq2W0WIi4xVv8GoSGnYHl0vpJ9Ve/t+HvNXy7fppRN+GPdYD5oYojKo
+      Uqn3aFjzsXKuVIhvv/pHDH8J21DoIkH4bShzbt16fypEpkqejnvkquRu1OEwnXA36rxhAG8L
+      WRdK8jweMC4y1vwGq15Ef3ooPfa6WMKsWivqKmJ7HOH9x95LElmg0DjCJLAdAtOm4wY8Gfe4
+      H3VIZMFRFqPRRKZDicYWBrlW2MLgVnC+toU3IYXgqmQsVCpEs9Vi52BAFFgoYVP29mh01s9M
+      hdBaMyoybMPEt2x2J2PWgiaDPGEvHeMYFtaPthZnhaz1NDiVqRIhBKMyY81sMpEFtmEyTMf0
+      spjQdnENC6kkiSoJrarbgkIT2pVfP5fVBMZSKfp5CgIix8NWFrvpmBUvIjRtjt64eXcAAA2V
+      SURBVPKE243OB297bkIKwVXJWKhUiLXNO6y9P/sBqGZ/Ka1P5ldVKRFDTMOg6fiseNFMU8lz
+      VaLR+JbDKE8Z5AnPxj3aTsAgTxAIHjSXScocQxh8P+zjGFW6gqAqkOnaEfvJiMByWPGjqtuc
+      7ZLLkiejQwol0VqzmwxZ9SLuNt7eraHm0+LS4gCFkoS2g2Na7CYjpNZ83lpF62oy5Pakz9Px
+      4VsrpUqlOEwnDPIUgKTMpz36DVa8iJbjsexFHGUTno6PiMuCvWSEb9nV+UJrXNMmk5KX8YAV
+      L8IQgr1kRGi7dNwApTX76RghBF+0V2k5Pqteo+7Rf4O4NC/QetBkd5odOchTClX541uOj6bq
+      4HA7WuLFpM/d1/L+S6X4frjPME950FymVIonoyOgSnKrDsCVZ6bjhuRKIpSkkJJxmeGbNoFV
+      jQ5NygJDVFmbVT6Pw6rtsp+M+WHco+l4Vcanhp14WJVEXtYHUrOQXNqrzhQGm2G7OgOYNnej
+      TtUVzjCqwJV8NdHweAsCcJiOKZTki/YahZKs+hGmENyNujiGybhIUSiGecpXvR1SWVBMYwGR
+      5VIqxX4yYtkLWfZCGraHgSCyXWzDRFMZ56rf4E7UOQmu3Wl0TvL8a24Ol58LBIDmyfgQxzBR
+      WtOangFKrdhNRnzT3ztJbmu7Pqks2UtGtF0fUxiEtlu1E6dqbTLIU0ZFRlzmrxWnC8ZlRmDZ
+      J0l3rmkRWA6WYbA96VNOyx5TWXC/0SWXJWt+E9swZ+r8VvPpcekG0PVCLMMkslx+1qlO0Kt+
+      gxU/YpSnNGyXtuvzMh6gAde0edhaxTJMcinZS8aMi2zq4VF4lo1v2mg004Gi1TZIcJzqc9JX
+      1DOrNOzActBUI0T/09E2vungmhbrQfO9RTo1nzaXXg9gimoAxLNxj4NkXOXXT7+ntMazbCxh
+      ILUCNAfpGK0hkwUH6ZgX8YBlL8QQBnk6IZt2lStklcJ8/NybwsCzLIZFdtKzJy5zclUyyFNa
+      04DZrVb7nZNbam4Wl24Axx2TNdXQuFtB++SN+7C9yveDfRTwsLXKbjxiKLOT/jz3G91p4Yok
+      LhME4BjWG54jDYSWg5wmxHmmxUbQIlclUlUNuLrTdGwhqh7/dY+emmPO2RpRE8cJBholLGSR
+      4AUNbMt8ozViP0voT7so9POYrheyl4wYZCkbYZN1v/nGtiMpC7YnfXbiAaHtIrXGMy1MYZDI
+      AjTYZnV+SMq8SnvQGsswT3puFlriGha2YRCXBaHtYk5reAWC/Wl5pGfa3Apbb53esgjBn3nI
+      WAQd5iFjodqjTwaHfPV4h27TRcoSLWxsx+XO1qtUCKkVvz3aPqn4qmYBVBVTLdsnm87Oej0L
+      dDse0HED/uFwG4WeToqpvEMtx0drsA2DUZExzFMsw6BQio4bMCgSWraH0lVbld14RKkVke3Q
+      tH0yWQCw7IWEtovxHkfnIoT/5yFjEXSYh4yFSoXYPzgkHY8oAwuNQMkC+7U++EIIMikplMQx
+      TKRW3I7aPBodsu5XB87jCPHrK0Db9dlJRkitkFpVrQnzrDrk6qpU8S86W3w33J+2F2+xPenT
+      y2OW3XB6EK5yjULLIbKqbU6hSnzLYT1onsu/P49D8SLIWAQd5iHjMnU4lwHc++wht+9JtCxR
+      wkTLAstxqxx9ITCMqj35V1/vYDsmt28v8e3wAIBnk36Vd49mdToY43gsqClMjrIJUqtqyPRr
+      lcKJLDCF4JvBLoksTuqCI8fFliamYdDLEjbDFv0sRqGZFDmeZXO/uXxShDPrW2QR3nrzkLEI
+      OsxDxkKtADBNeDtOerNPX/4fvnqKVZq0V3z+/h+e8ZP7K2wsVaONNsPWib9da83LeMgoT9lL
+      x4S2wyuPPry+L5Nak03nCQSWSVoWWMLAtqqH3zZM1v0mkeXQyxLWggaH6YSX8RDjtczQmpof
+      M38vUKmxfAPbNknSgv2jMd9/f8Cv/uwen7dWqh9RiueTHrvjIT8879Fc9SmkxDVNMiXP7BSR
+      lDkg8CwLexpQ80wLfxoX+G64T9vxud/oYJsWkeWSqfJU+5SamteZeyDsv/zFZ5iJwW9++wyV
+      Kx7eX+X21hK9/Wokkdaax6NDellMb5TQXguwLIM0K8iUfOte3bNsQts5iR08aC6TyIKOG/BF
+      e43QcrgVtE4OuaZhEFhO/faveSdzXwFyJA9+1mVLtXn8wyF/+7ffsuQF/Pqf3OPp6IjQdtie
+      VKOLDE8gjMooXLdS5bji99ijZAmDO9ESvSxhyQum3iV1krymtObFpP/GgO2amlmZuwH0shil
+      NXejJfRtzV8+uFUNv9aSFS/ij/2XaA2GAaZpoPU0X2j6olbTDZChwTMtOm4ICNquT1zkmIZB
+      2/FY9SvPTtUpTuGZ1gcN1Ki52czdAExhoNC8iAf4ls29VlVYfpiOeTlNj1ZolKoe1td3KK8f
+      fhVVMpttmJRacr+xjCnESR3x8b7eFq8mwtQGUHNe5n4GaLv+dBsjCC2XfpawGbRO+uQrrTjr
+      OT1OVYZXhfKmMFnxIxq2xzBPKlfre4bL1dSch3OtAEWWMJhkhK6JFDYyi/EbLRzrVS1wlYVZ
+      eWf2kjHjMiOVBaM8q/z8Wk8f8Dcf4tfn8GqmBqE13w8PKJXkp0sbF7jNmpqzOZcB5HnBwcE+
+      Y9tAlgWYLuYoPkmFABC66ghd9d2pJir+MD466a35vre3QFRFKuESiSoRCFqOR1oW+Ma71dVa
+      X3gbpJRCyvcPxV50GYugwzxkXLYO5zKAo4MdTMunLCdIJZBFTDAtID+OBEeOi2uaKDiZwfs+
+      DCGwhEGuqlhAw/bYjKoU6kmZk8iC2+HSe12axwZwkcjhRa9fFBmLoMM8ZFy2DucygI2texRS
+      4VjraGGgpcSczr49/tcSZjVrK4tnlqumriBLGHS9iKbt8nzSJ7Jd7ja6M7cp1zOuMu9jEfJf
+      5iFjEXSYh4yFyQWybIc3un+fMRJpkCVkqmRcpDPJtA0TA8Gq36A77bGPEG8NiNXUzJO5u0GP
+      snjmObrH//1Je4VVr4GUsvbw1FwpczeAwHL4erD73skvjmnRcQNCy2XVa9QPfs21MHcDKLWc
+      1veejWNUh9ym42EZJptBs374a66NuRvAuMjeOk7IQPBZc2Xa66duQ1Jz/VzIv9Q73Ccr3vSv
+      vs1VaQrBZ61l1oMmllH3269ZDD54BdBlRm8UMxin3Lt7++TrP57OftylodSK22HddLZmsfjw
+      FUAIkvEIfhSdVVrjGCah5eCZFqt+Aw1she364a9ZOD54BRCmw5dffon4USxgK6waT+VK8tPW
+      Bo3j2Vr1w1+zgJyzL9DZSClPFR7POv7odS5aAD2PSPAiFILPQ8Yi6DAPGQtXFH8W5nTSy0UV
+      vaiMeRjAItzHPGQsgg7zkHHZOsxlBaip+ViZWxygTCf84U9fs7r1ORvLzXNd++zxtxRmQDnp
+      gRPx8LN757p+eLRLL4FssI+2XLJkRGf1Llsb3fdfPOXbr//A7a1b/OOfnrG+3GDvaMjPf/4z
+      HGu2t0+ejPnm6z8h/DZ5ntNwoDQ8vvzJg5l1iIc9vvn+Ca7vE0QtksEeVtDh8/u3338xAIrv
+      /vRHslyT6wLXbZKmCX/5lz+f2duRjPr88U/fEDTbeEFEMT4Et8nDB3dnvo8yi/m7333FxlJI
+      qmzIBvjtde7fmXG+FnDw8gl7I0k2HrC22uXlQY/Pf/JTWuFstd8q6fP3Xz9jbanBXn9Ey3dI
+      peDP/+zhG1vzuVWEybJgeXWVIjt/41nX9egdHmAHDezT+XXvpdnu4FgGbtjE0iVLyyvI4nx6
+      dJeXkcrAtwt2DyesdtqU51gchda01+/S8GyWogDLC/FmNJ5XQgTrW3dpRz6Hh4f4UQtLnGNE
+      q9K4foQucza31hlNClZaDc6TTW/YNoHv4TgOhwcHOEED55y38fzZDxRpirY8AsckbHUQqpj5
+      eq0k2y92GY/GeK7J7s4h6+urFEU5s4wSC4+MvX7CSqeFNGwizzmVojO3FcAJWxiDCWvrs791
+      j4miiA0zILQVOI1zX987OmQ8zlhuB5jLqyTDQ5bW1s4hQTEaDMkjk0azw8PNDfYP+vjneICl
+      1kyGPTY3NhgnOdF0BTgPSkoG/T6r3Ra3vCYOOVbYnl2AECgpefDTn3O4v8cvf3GfncMR9vuv
+      PEErhdfosNIOCcIGgSkR3vlW9Huff8narQRVpGTaRqUjgvbK7LdhmPzFf/bXJGnG4f4u9z/f
+      5ODggG7Ln1mG7Xo02is83Fhj/2jInSWXcX76jV+fAWpuNPU4xJobTW0ANTeaS58QU1Pxv/yb
+      /5E7d37Ow7/5BQGao72XJAVYZcKjXsk/+cVnHAwSQlvit7r8+7/9t0gzIOk95S/+q/+O3/27
+      /4PW8l22NtdZ6UQMM4GrE373zWPurq1h2DaW49IMbHIcRge72GFI27cpjIC4v0NzeYO9nV2+
+      /PJhXXE3pTaAK+LOZw/47vd/gpaLK3PyZIwsLXqDHkvdDv/T//q/8fCLLyizEf/yX/xzbK+F
+      qwu8Ow+5v9biP8Z9nv8QsXfQY2W1xc7+EVsrbXw9ZPvRhNK12I5t/vPbEbmUvHy+i9lepmlr
+      yrLEsCzy774mLgLuPXyIX6/9APz/lFostXK1o40AAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Value of Care' width='192'>
+      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
+      0QUD1AAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
